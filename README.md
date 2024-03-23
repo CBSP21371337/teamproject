@@ -1,3 +1,1 @@
 # teamproject
-
-jebać czarnych
