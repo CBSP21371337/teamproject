@@ -42,7 +42,7 @@ function ThemeController() {
     };
     return (
         <div className="bg-buttonGray p-1.5 rounded-full flex">
-            <div className={`absolute bg-gray-200 rounded-full w-[45px] h-[45px] ${isPinging ? 'animate-ping' : 'hidden'}`}>
+            <div className={`absolute bg-secondary rounded-full w-[45px] h-[45px] ${isPinging ? 'animate-ping' : 'hidden'}`}>
             </div>
           <label className="swap swap-rotate bg-thInside rounded-full w-[45px] h-[45px]">
             <input onClick={handleClick} type="checkbox" className="theme-controller" value="light" />
