@@ -29,11 +29,17 @@ const config: Config = {
           '100%': {background: 'none'},
           '0%, 50%': {'font-size': '1.1', color: '#000'},
           '0%': {background: "#19B6E1", 'font-weight': 'bold', scale:'1.05'},
+        },
+        themeCtr:{
+          '100%': {background: 'none'},
+          '0%, 50%': {'font-size': '1.1', color: '#000'},
+          '0%': {background: "#19B6E1", 'font-weight': 'bold', scale:'1.05'},
         }
       },
       animation:{
         btnHover: 'btnHover 0.35s ease-out forwards',
         btnHoverR: 'btnHoverR 0.55s ease-out backwards',
+        themeCtr: 'themeCtr 0.55s ease-out backwards',
       }
     },
     fontSize: {
@@ -55,6 +61,7 @@ const config: Config = {
           "accent": "#2027D9",
           "neutral": "#0F1013",
           "base-100": "#131418",
+          "base-200": "#202124",
           "info": "#009eff",
           "success": "#00af4e",
           "warning": "#ffc400",
