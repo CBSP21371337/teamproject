@@ -3,9 +3,10 @@
 import Link from "next/link"
 import Image from "next/image"
 import {useState} from 'react';
-
+import { useTranslation } from 'react-i18next';
 
 const NavLink = ({ href, children }) => {
+    const { t } = useTranslation();
     const [isHovered, setIsHovered] = useState(false);
   
     return (
@@ -13,16 +14,17 @@ const NavLink = ({ href, children }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}>
         <Link href={href}>
-          {children}
+          {t(children)}
         </Link>
       </li>
     );
 };
 const DropNavLink = ({ href, children }) => {
+    const { t } = useTranslation();
     return (
       <li className={`mx-2 p-2 rounded-md hover:bg-gray-700 hover:text-white`}>
         <Link href={href} className="text-sm w-full h-full">
-          {children}
+        {t(children)}
         </Link>
       </li>
     );
@@ -73,7 +75,7 @@ function DropdownMenu() {
                 />
             </div>
             <ul tabIndex={0} className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ${isOpen ? 'block' : 'hidden'}`}>
-                <DropNavLink href={'/'}>Strona Główna</DropNavLink>
+                <DropNavLink href={'/'}>'page.home.title'</DropNavLink>
                 <DropNavLink href={'/Kontakt'}>Kontakt</DropNavLink>
                 <DropNavLink href={'/Pokoje'}>Pokoje</DropNavLink>
                 <DropNavLink href={'/FAQ'}>FAQ</DropNavLink>
