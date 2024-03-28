@@ -9,18 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@formatjs/intl-localematcher": "^0.5.4",
     "@tabler/icons-react": "^3.1.0",
-    "i18next": "^23.10.1",
-    "negotiator": "^0.6.3",
     "next": "14.1.4",
-    "package.json": "^0.0.0",
+    "package.json": "^2.0.1",
     "react": "^18",
-    "react-dom": "^18",
-    "react-i18next": "^14.1.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/negotiator": "^0.6.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
