@@ -67,7 +67,7 @@ function ThemeController() {
   );
 }
 
-export function DropdownMenu({ locale }: { locale: string }) {
+function DropdownMenu({children} : {children: React.ReactNode}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -85,16 +85,15 @@ export function DropdownMenu({ locale }: { locale: string }) {
           className="burger-dp-menu"
         />
       </div>
-      <NavbarContainer locale={locale}>
       <ul tabIndex={0} className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ${isOpen ? 'block' : 'hidden'}`}>
-        <DropNavLink href={'/'}><FormattedMessage tagName="p" id="Navbar.Main" /></DropNavLink>
+        {/* <DropNavLink href={'/'}><FormattedMessage tagName="p" id="Navbar.Main" /></DropNavLink>
         <DropNavLink href={'/Kontakt'}><FormattedMessage tagName="p" id="Navbar.Contact" /></DropNavLink>
         <DropNavLink href={'/Pokoje'}><FormattedMessage tagName="p" id="Navbar.Rooms" /></DropNavLink>
         <DropNavLink href={'/FAQ'}><FormattedMessage tagName="p" id="Navbar.FAQ" /></DropNavLink>
         <DropNavLink href={'/Grupy'}><FormattedMessage tagName="p" id="Navbar.Groups" /></DropNavLink>
-        <DropNavLink href={'/Regulamin'}><FormattedMessage tagName="p" id="Navbar.Statue" /></DropNavLink>
+        <DropNavLink href={'/Regulamin'}><FormattedMessage tagName="p" id="Navbar.Statue" /></DropNavLink> */}
+        {children}
       </ul>
-      </NavbarContainer>
     </div>
   );
 }
@@ -131,7 +130,16 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
           </ul>
         </div>
       </NavbarContainer>
-      <DropdownMenu locale={locale} />
+      <DropdownMenu>
+        <NavbarContainer locale={locale}>
+          <DropNavLink href={'/'}><FormattedMessage tagName="p" id="Navbar.Main" /></DropNavLink>
+          <DropNavLink href={'/Kontakt'}><FormattedMessage tagName="p" id="Navbar.Contact" /></DropNavLink>
+          <DropNavLink href={'/Pokoje'}><FormattedMessage tagName="p" id="Navbar.Rooms" /></DropNavLink>
+          <DropNavLink href={'/FAQ'}><FormattedMessage tagName="p" id="Navbar.FAQ" /></DropNavLink>
+          <DropNavLink href={'/Grupy'}><FormattedMessage tagName="p" id="Navbar.Groups" /></DropNavLink>
+          <DropNavLink href={'/Regulamin'}><FormattedMessage tagName="p" id="Navbar.Statue" /></DropNavLink>
+        </NavbarContainer>
+      </DropdownMenu>
       <div className="navbar-end flex items-center">
       <ThemeController />
       </div>
