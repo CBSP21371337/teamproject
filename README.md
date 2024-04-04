@@ -1,3 +1,0 @@
-# teamproject
-
-jebać czarne kurwy
