@@ -4,10 +4,9 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/[locale]/*.{js,ts,jsx,tsx,mdx}",
-    "./app/[locale]/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -71,7 +70,7 @@ const config: Config = {
           "color": "#fff",
 
           '.kalaowimglogo': {
-            'content': 'url(/sus.png)',
+            'content': 'url(/logoblack.png)',
           },
           '.burger-dp-menu':{
             'content': 'url(/burger-menu.svg)',
@@ -94,7 +93,7 @@ const config: Config = {
             'color': '#050315',
           },
           '.kalaowimglogo': {
-            'content': 'url(/logoblack.png)',
+            'content': 'url(/sus.png)',
           },
           '.burger-dp-menu':{
             'content': 'url(/burger-menuL.svg)',
