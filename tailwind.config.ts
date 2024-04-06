@@ -10,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      inset: {
+        '40': '40%',
+        '43': '43%',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

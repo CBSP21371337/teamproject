@@ -42,8 +42,8 @@ export default async function RootLayout({
     <html lang={locale} data-theme='dark'>
       <body className='bg-gray-100'>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navbar locale={''} />
-          <div className='p-5'>
+          <Navbar locale={''}/>
+          <div className='bg-white dark:bg-black'>
             {children}
           </div>
         </NextIntlClientProvider>
