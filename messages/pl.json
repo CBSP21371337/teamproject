@@ -1,0 +1,23 @@
+{
+    "Navbar": {
+        "Main": "Strona główna",
+        "Contact": "Kontakt",
+        "Rooms": "Pokoje",
+        "FAQ": "FAQ",
+        "Groups": "Grupy",
+        "Statue": "Regulamin"
+    },
+    "HomePage": {
+        "helloWorld": "Hello World !"
+    },
+    "AboutPage": {
+        "aboutText": "This is a fully translated static website"
+    },
+    "Header": {
+        "home": "Hodase",
+        "about": "About"
+    },
+    "LocaleSwitcher": {
+        "locale": "{locale, select, pl {PL} en {EN} other {DE}}"
+    }
+}

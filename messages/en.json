@@ -1,0 +1,23 @@
+{
+    "Navbar": {
+        "Main": "Main",
+        "Contact": "Contact",
+        "Rooms": "Rooms",
+        "FAQ": "FAQ",
+        "Groups": "Groups",
+        "Statue": "Statue"
+    },
+    "HomePage": {
+        "helloWorld": "Hello World !"
+    },
+    "AboutPage": {
+        "aboutText": "This is a fully translated static website"
+    },
+    "Header": {
+        "home": "Home",
+        "about": "About"
+    },
+    "LocaleSwitcher": {
+        "locale": "{locale, select, pl {PL} en {EN} other {DE}}"
+    }
+}
