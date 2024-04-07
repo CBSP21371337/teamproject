@@ -1,6 +1,8 @@
 import '../globals.css'
 import type { Metadata } from 'next'
 import Navbar from '../../components/Navbar/Navbar'
+import ThemeController from '../../components/ThemeController/Theme'
+import Footer from '../../components/Footer/Footer'
 import { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
@@ -46,6 +48,8 @@ export default async function RootLayout({
           <div className='bg-white dark:bg-black'>
             {children}
           </div>
+          <ThemeController />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
