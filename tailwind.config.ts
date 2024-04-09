@@ -13,6 +13,7 @@ const config: Config = {
       inset: {
         '40': '40%',
         '43': '43%',
+        '122px': '122px',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -106,7 +107,7 @@ const config: Config = {
       },
     ],
     base: true, // applies background color and foreground color for root element by default
-    styled: false, // include daisyUI colors and design decisions for all components
+    styled: true, // include daisyUI colors and design decisions for all components
     utils: true, // adds responsive and modifier utility classes
     prefix: "", // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS

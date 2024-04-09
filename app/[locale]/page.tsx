@@ -7,7 +7,7 @@ export default function HomePage() {
 
 
   return (
-    <div>
+    <div className=''>
       <div className='z-40 top-43' style={{position: "absolute", display: "flex", flexWrap: "wrap", width: "100%"}}>
         <div className="z-[1] w-[33%] h-full pl-[20%] pt-5 rounded-[50%] select-none">
           <div className='float-right'>

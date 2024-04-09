@@ -10,8 +10,57 @@
     "HomePage": {
         "helloWorld": "Hello World !"
     },
-    "AboutPage": {
+    "Contact": {
         "aboutText": "This is a fully translated static website"
+    },
+    "Rooms": {
+        "aboutText": "This is a fully translated static website"
+    },
+    "FAQ": {
+        "q1": "Czy dostępne jest miejsce parkingowe?",
+        "a1": "Na terenie ośrodka posiadamy wolne miejsca parkingowe dodatkowo płatne.",
+        
+        "q2": "Czy wystawiamy faktury?",
+        "a2": "Tak, wystawiamy faktury VAT za pobyty i wyżywienie.",
+
+        "q3": "Czy dostępne są łóżeczka turystyczne?",
+        "a3": "Tak, posiadamy łóżeczka turystyczne za dodatkową opłatą. Obowiązuje rezerwacja.",
+
+        "q4": "Czy w pokojach jest prywatna łazienka?",
+        "a4": "Tak, w każdym z naszych pokoi i domków jest prywatna łazienka.",
+
+        "q5": "Czy zwierzęta są akceptowane?",
+        "a5": "Obecność zwierzęcia musi być potwierdzona przy rezerwacji oraz obowiązuje dodatkowa opłata.",
+
+        "q6": "Jak daleko jest do plaży?",
+        "a6": "Plaża znajduje się w odległości zaledwie 200 metrów od ośrodka.",
+
+        "q7": "Czy jest możliwość wykupienia wyżywienia?",
+        "a7": "Tak, stołówka w ośrodku serwuje śniadanie, obiad i kolację.",
+
+        "q8": "Jakie są godziny zameldowania i wymeldowania?",
+        "a8": "Doba zaczyna się od godziny 16, a kończy o 10.",
+
+        "q9": "Jakie są godziny posiłków?",
+        "a9": "Śniadanie 8:00, Obiad 13:00, Kolacja 18:00 (ewentualnie(to do sprawdzenia i ustalenia) Śniadanie 8:00, Zupa 13:00, Obiadokolacja 18:00)",
+
+        "q10": "Czy ośrodek zapewnia dostęp do WIFI?",
+        "a10": "Tak, na terenie ośrodka znajduje się bezpłatny punkt dostępowy WIFI.",
+
+        "q11": "Jakie są rodzaje dostępnych pokoi?",
+        "a11": "Informacje o pokojach wraz ze zdjęciami znajdują się na podstronie (link do podstrony)",
+
+        "q12": "Czy dostępne są leżaki i parawany?",
+        "a12": "Tak, leżaki oraz parawany można wypożyczyć na recepcji.",
+
+        "q13": "Czy ośrodek przyjmuje grupy zorganizowane, itp.?",
+        "a13": "Tak, szczegółowe informacje można znaleźć na stronie (strona do grupy), lub poprzez kontakt tel: +48606446539.",
+
+        "q14": "Czy plaża jest strzeżona?",
+        "a14": "Tak, plaża w Pobierowie jest strzeżona przez ratowników RWR, oraz WOPR.",
+
+        "q15": "Ile wynosi opłata klimatyczna?",
+        "a15": "Opłata klimatyczna wynosi 2.50 zł za osobę (cena może się w każdej chwili zmienić)"
     },
     "Header": {
         "home": "Hodase",

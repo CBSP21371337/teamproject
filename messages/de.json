@@ -10,8 +10,57 @@
     "HomePage": {
         "helloWorld": "Hello World !"
     },
-    "AboutPage": {
+    "Contact": {
         "aboutText": "This is a fully translated static website"
+    },
+    "Rooms": {
+        "aboutText": "This is a fully translated static website"
+    },
+    "FAQ": {
+        "q1": "Gibt es einen Parkplatz?",
+        "a1": "Wir verfügen über kostenpflichtige Parkplätze auf dem Gelände.",
+
+        "q2": "Stellen wir Rechnungen aus?",
+        "a2": "Ja, wir stellen Mehrwertsteuerrechnungen für Aufenthalte und Verpflegung aus.",
+        
+        "q3": "Gibt es Reisebetten?",
+        "a3": "Ja, wir haben Reisebetten gegen eine zusätzliche Gebühr. Eine Reservierung ist erforderlich.",
+        
+        "q4": "Haben die Zimmer ein eigenes Bad?",
+        "a4": "Ja, in jedem unserer Zimmer und Ferienhäuser gibt es ein eigenes Bad.",
+        
+        "q5": "Sind Haustiere erlaubt?",
+        "a5": "Die Anwesenheit eines Haustieres muss bei der Buchung bestätigt werden und es fällt eine zusätzliche Gebühr an.",
+        
+        "q6": "Wie weit ist es zum Strand?",
+        "a6": "Der Strand ist nur 200 Meter vom Resort entfernt.",
+        
+        "q7": "Kann man Verpflegung buchen?",
+        "a7": "Ja, das Restaurant im Resort serviert Frühstück, Mittagessen und Abendessen.",
+        
+        "q8": "Was sind die Check-in und Check-out Zeiten?",
+        "a8": "Der Tag beginnt um 16 Uhr und endet um 10 Uhr.",
+        
+        "q9": "Wann sind die Essenszeiten?",
+        "a9": "Frühstück um 8:00 Uhr, Mittagessen um 13:00 Uhr, Abendessen um 18:00 Uhr (ggf. Frühstück um 8:00 Uhr, Mittagssuppe um 13:00 Uhr, Abendessen um 18:00 Uhr)",
+        
+        "q10": "Bietet das Resort WLAN?",
+        "a10": "Ja, es gibt einen kostenlosen WLAN-Zugang im Resort.",
+        
+        "q11": "Welche Arten von Zimmern stehen zur Verfügung?",
+        "a11": "Informationen zu den Zimmern mit Bildern finden Sie auf der Unterseite (Link zur Unterseite).",
+        
+        "q12": "Gibt es Liegestühle und Sonnenschirme?",
+        "a12": "Ja, Liegestühle und Sonnenschirme können an der Rezeption ausgeliehen werden.",
+        
+        "q13": "Akzeptiert das Resort organisierte Gruppen usw.?",
+        "a13": "Ja, detaillierte Informationen finden Sie auf der Website (Gruppenseite) oder durch telefonischen Kontakt unter +48606446539.",
+        
+        "q14": "Ist der Strand bewacht?",
+        "a14": "Ja, der Strand in Pobierowo wird von Rettungsschwimmern der RWR und WOPR bewacht.",
+        
+        "q15": "Wie hoch ist die Kurtaxe?",
+        "a15": "Die Kurtaxe beträgt 2,50 zł pro Person (der Preis kann sich jederzeit ändern)."
     },
     "Header": {
         "home": "Home",

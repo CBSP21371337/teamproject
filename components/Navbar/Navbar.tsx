@@ -69,7 +69,7 @@ interface NavLinkProps {
     locale: string;
   }
 
-  const Navbar: React.FC<NavbarProps> = ({ locale }) => {
+  const Navbar: React.FC<NavbarProps> = () => {
     const t = useTranslations('Navbar')
     return (
       <div className="navbar bg-neutral py-[32px] px-[16px]" style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000}} >
