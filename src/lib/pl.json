@@ -1,0 +1,10 @@
+{
+    "navbar": {
+        "home": "Główna",
+        "about": "O nas",
+        "contact": "Kontakt",
+        "statue": "Regulamin",
+        "CurrentLang": ["(PL)", "(EN)", "(DE)"],
+        "CurrentLangFlag": ["/flags/pl.svg", "/flags/en.svg", "/flags/de.svg"]
+    }
+}

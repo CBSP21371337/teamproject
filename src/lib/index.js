@@ -1,4 +1,1 @@
-// Reexport your entry components here
-import Navbar from '$lib/navbar.svelte'
-
-export {Navbar}
+// place files you want to import through the `$lib` alias in this folder.
