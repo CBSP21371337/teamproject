@@ -1,6 +1,6 @@
 <script>
     let scroll = 0
-    let pspeed = 0.7
+    let pspeed = 0.4
 </script>
 
 <svelte:window bind:scrollY={scroll} />

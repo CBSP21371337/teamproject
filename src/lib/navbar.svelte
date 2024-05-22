@@ -64,6 +64,7 @@
             <li><a href={link}>{nazwa}</a></li>
             {/each}
         </ul>
+        <hr>
     </div>
     {/if}
 </nav>
@@ -72,6 +73,10 @@
     
 
 <style>
+    hr{
+        border-top: 1px solid black;
+        margin: 25px 0;
+    }
     .outclick_check{
         position: absolute;
         width: 80%;
@@ -118,7 +123,7 @@
         transition: transform 100ms ease-in-out;
         transform-origin: 0% 50%;
     }
-    li:hover:after { transform: scaleX(0.6); }
+    li:hover:after { transform: scaleX(0.8); }
     li:hover a{
         color: rgb(0, 217, 255);
     }
