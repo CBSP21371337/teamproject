@@ -13,6 +13,16 @@
             drawer = false;
         }
     }
+
+    let navlinks = [
+        {nazwa: 'Strona Główna', link: '/'},
+        {nazwa: 'O nas', link: '/'},
+        {nazwa: 'Kontakt', link: '/'},
+        {nazwa: 'FAQ', link: '/'},
+        {nazwa: 'Pokoje', link: '/'},
+        {nazwa: 'Regulamin', link: '/'},
+        {nazwa: 'Dla Grup', link: '/'}
+    ]
 </script>
 
 <!-- <div class="burger-menu">
@@ -69,13 +79,9 @@
     {#if drawer == true}
     <div class="drawer" in:fly={{delay: 50, duration: 300, x: 200}} out:fly={{delay: 50, duration: 200, x: 200}}>
         <ul in:fly={{delay: 200, duration: 250, x: 200}} out:fly={{delay: 0, duration: 200, x: 200}}>
-            <li><a href="/">Strona Główna</a></li>
-            <li><a href="/">O Nas</a></li>
-            <li><a href="/">Kontakt</a></li>
-            <li><a href="/">FAQ</a></li>
-            <li><a href="/">Pokoje</a></li>
-            <li><a href="/">Regulamin</a></li>
-            <li><a href="/">Dla Grup</a></li>
+            {#each navlinks as {nazwa, link}, i}
+            <li><a href={link}>{nazwa}</a></li>
+            {/each}
         </ul>
     </div>
     {/if}

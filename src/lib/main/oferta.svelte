@@ -1,32 +1,44 @@
+<script>
+    let ofera = [
+        {src: '/main/oferta/stolowka.svg', name: "Stołówka", alt: 'stołówka', desc: 'To jest krótki opis do danej oferty'},
+        {src: '/main/oferta/stolowka.svg', name: "Monitoring", alt: 'monitoring', desc: 'To jest krótki opis do danej oferty'},
+        {src: '/main/oferta/playground.svg', name: "Plac Zabaw", alt: 'pzabaw', desc: 'To jest krótki opis do danej oferty'},
+        {src: '/main/oferta/wifi.svg', name: "Wifi", alt: 'wifi', desc: 'To jest krótki opis do danej oferty'}
+    ]
+    import {fade} from 'svelte/transition'
+</script>
+
+
 <section class="oferta">
-    <div class="card">
-        <img src="/main/oferta/stolowka.svg" alt="stołówka">
-        <h3>Stołówka</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, laudantium!</p>
-    </div>
-    <div class="card">
-        <img src="/main/oferta/stolowka.svg" alt="Monitoring">
-        <h3>Monitoring</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, laudantium!</p>
-    </div>
-    <div class="card">
-        <img src="/main/oferta/playground.svg" alt="pzabaw">
-        <h3>Plac Zabaw</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, laudantium!</p>
-    </div>
-    <div class="card">
-        <img src="/main/oferta/wifi.svg" alt="wifi">
-        <h3>Wifi</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, laudantium!</p>
+    <h1>Oferta Ośrodka</h1>
+    <div class="container">
+        {#each ofera as {src, name, alt, desc}, i}
+        <div class="card">
+            <img src={src} alt={alt}>
+            <h3>{name}</h3>
+            <p>{desc}</p>
+        </div>
+        {/each}
     </div>
 </section>
 <style>
-    .oferta{
+    h1{
+        font-size: 35px;
+        text-transform: capitalize;
+        color: white;
+        margin: 40px auto;
+    }
+    .container{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin: 40px auto;
+    }
+    .oferta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         user-select: none;
     }
     .card{

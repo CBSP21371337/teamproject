@@ -1,16 +1,7 @@
 <script>
     import Oferta from '$lib/main/oferta.svelte'
+    import Header from '$lib/main/header.svelte'
 </script>
 
-<div class="header"></div>
+<Header />
 <Oferta />
-    
-<style>
-    .header{
-        background: url('/main/00000.png');
-        background-attachment: fixed;
-        background-position: center;
-        width: 100%;
-        height: 100vh;
-    }
-</style>
