@@ -1,5 +1,5 @@
 <script>
-    import {fade, fly, scale} from 'svelte/transition'
+    import {fly, scale} from 'svelte/transition'
     let drawer = false;
     function Drawer() {
         if (drawer == false) {
@@ -40,33 +40,14 @@
             <g id="burger-menu">
                 {#if drawer == false}
                 <g id="burger-closed" transition:scale={{duration: 400, opacity: 0, start: 0.4}}>
-                    <g id="burger-menu-line burger-menu-lines">
-                    <rect x="20" y="15" width="80" height="10" rx="5" fill="#00C2FF"/>
-                    <rect x="20.5" y="15.5" width="79" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-                    </g>
-                    <g id="burger-menu-line_2 burger-menu-lines">
-                    <rect x="20" y="40" width="80" height="10" rx="5" fill="#00C2FF"/>
-                    <rect x="20.5" y="40.5" width="79" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-                    </g>
-                    <g id="burger-menu-line_3 burger-menu-lines">
-                    <rect x="20" y="65" width="80" height="10" rx="5" fill="#00C2FF"/>
-                    <rect x="20.5" y="65.5" width="79" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-                    </g>
+                    <rect id="burger-menu-line burger-menu-lines" x="20" y="15" width="80" height="10" rx="5" fill="#00C2FF"/>
+                    <rect id="burger-menu-line_2 burger-menu-lines" x="20" y="40" width="80" height="10" rx="5" fill="#00C2FF"/>
+                    <rect id="burger-menu-line_3 burger-menu-lines" x="20" y="65" width="80" height="10" rx="5" fill="#00C2FF"/>
                 </g>
                 {:else if drawer == true}
                 <g id="burger-open" transition:scale={{duration: 400, opacity: 0, start: 0.4}}>
-                    <g id="burger-menu-line_4 burger-menu-lines">
-                    <rect x="20" y="15" width="80" height="10" rx="5" fill="#005eff"/>
-                    <rect x="20.5" y="15.5" width="79" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-                    </g>
-                    <g id="burger-menu-line_5 burger-menu-lines">
-                    <rect x="35" y="40" width="65" height="10" rx="5" fill="#005eff"/>
-                    <rect x="35.5" y="40.5" width="64" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-                    </g>
-                    <g id="burger-menu-line_6 burger-menu-lines">
-                    <rect x="50" y="65" width="50" height="10" rx="5" fill="#005eff"/>
-                    <rect x="50.5" y="65.5" width="49" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-                    </g>
+                    <rect id="burger-menu-line_4 burger-menu-lines" x="28.1802" y="69.7485" width="80" height="10" rx="5" transform="rotate(-45 28.1802 69.7485)" fill="#00C2FF"/>
+                    <rect id="burger-menu-line_5 burger-menu-lines" x="84.7485" y="76.8198" width="80" height="10" rx="5" transform="rotate(-135 84.7485 76.8198)" fill="#00C2FF"/>
                 </g>
                 {/if}
             </g>

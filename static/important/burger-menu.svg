@@ -1,32 +1,13 @@
 <svg width="120" height="90" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="burger-menu">
 <g id="burger-closed">
-<g id="burger-menu-line">
-<rect x="20" y="15" width="80" height="10" rx="5" fill="#00C2FF"/>
-<rect x="20.5" y="15.5" width="79" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-</g>
-<g id="burger-menu-line_2">
-<rect x="20" y="40" width="80" height="10" rx="5" fill="#00C2FF"/>
-<rect x="20.5" y="40.5" width="79" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-</g>
-<g id="burger-menu-line_3">
-<rect x="20" y="65" width="80" height="10" rx="5" fill="#00C2FF"/>
-<rect x="20.5" y="65.5" width="79" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-</g>
+<rect id="burger-menu-line" x="20" y="15" width="80" height="10" rx="5" fill="#00C2FF"/>
+<rect id="burger-menu-line_2" x="20" y="40" width="80" height="10" rx="5" fill="#00C2FF"/>
+<rect id="burger-menu-line_3" x="20" y="65" width="80" height="10" rx="5" fill="#00C2FF"/>
 </g>
 <g id="burger-open">
-<g id="burger-menu-line_4">
-<rect x="20" y="15" width="80" height="10" rx="5" fill="#00C2FF"/>
-<rect x="20.5" y="15.5" width="79" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-</g>
-<g id="burger-menu-line_5">
-<rect x="35" y="40" width="65" height="10" rx="5" fill="#00C2FF"/>
-<rect x="35.5" y="40.5" width="64" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-</g>
-<g id="burger-menu-line_6">
-<rect x="50" y="65" width="50" height="10" rx="5" fill="#00C2FF"/>
-<rect x="50.5" y="65.5" width="49" height="9" rx="4.5" stroke="black" stroke-opacity="0.1"/>
-</g>
+<rect id="burger-menu-line_4" x="28.1802" y="69.7485" width="80" height="10" rx="5" transform="rotate(-45 28.1802 69.7485)" fill="#00C2FF"/>
+<rect id="burger-menu-line_5" x="84.7485" y="76.8198" width="80" height="10" rx="5" transform="rotate(-135 84.7485 76.8198)" fill="#00C2FF"/>
 </g>
 </g>
 </svg>

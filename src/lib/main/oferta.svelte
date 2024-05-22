@@ -5,7 +5,6 @@
         {src: '/main/oferta/playground.svg', name: "Plac Zabaw", alt: 'pzabaw', desc: 'To jest krótki opis do danej oferty'},
         {src: '/main/oferta/wifi.svg', name: "Wifi", alt: 'wifi', desc: 'To jest krótki opis do danej oferty'}
     ]
-    import {fade} from 'svelte/transition'
 </script>
 
 
