@@ -7,13 +7,12 @@
 
 <div class='header'>
     <section>
-        <img src="/main/00000.png" alt="pokoje" style:transform={`translate3d(0 , ${scroll * pspeed}px, 0)`}>
+        <img src="/main/DOMKI-MAIN.webp" alt="pokoje" style:transform={`translate3d(0 , ${scroll * pspeed}px, 0)`}>
         <div class='napisy'></div>
         <p>Nasze przytulne pokoje czekają na Ciebie!</p>
         <button>Sprawdź Teraz</button>
     </section>
 </div>
-
 
 <style>
     .header{

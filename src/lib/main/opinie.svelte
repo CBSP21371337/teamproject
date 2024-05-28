@@ -2,7 +2,7 @@
     let opinie = [
         {link: 'https://www.google.com/travel/search?ts=CAEaIAoAEhwSFAoHCOgPEAUYHBIHCOgPEAUYHRgBMgQIABAA&qs=MiZDaGdJc0p5M2hmV3E2XzZDQVJvTEwyY3ZNWFJvZHpFMWRtNFFBUTgCQhwiGgoWQ0lITTBvZ0tFSUNBZ0lDVXFkX3JNZxAB&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls', logo: '/main/opinie/google-icon.svg', opinia: '4.3/5', nazwa: 'Google'},
         {link: 'https://www.booking.com/Share-eKEqpJ', logo: '/main/booking.png', opinia: '8.6/10', nazwa: 'Booking'},
-        {link: '', logo: '/main/guestbook.png', opinia: '9/10', nazwa: 'Księga Gości'}
+        {link: '', logo: '/main/guestbook.PNG', opinia: '9/10', nazwa: 'Księga Gości'}
     ]
     let opinieu = [
         {avatar: '/main/00000.png', nick: 'Magda Malina', opinia: 'Pyszne jedzenia , przemiła obsługa, doskonała organizacja przez właścicieli, wygodne i czyste pokoje z łazienkami TV i WI- FI, oraz piękna pogoda. Wszędzie blisko. Polecam gorąco.', ocena: 4.5},
@@ -19,7 +19,6 @@
     let scroll = 0
     let pspeed = 0.1
 </script>
-
 
 <div class="odkryj">
     <h2>Odkryj nasz ośrodek</h2>
