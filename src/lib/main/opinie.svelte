@@ -5,16 +5,13 @@
         {link: '', logo: '/main/guestbook.PNG', opinia: '9/10', nazwa: 'Księga Gości'}
     ]
     let opinieu = [
-        {avatar: '/main/00000.png', nick: 'Magda Malina', opinia: 'Pyszne jedzenia , przemiła obsługa, doskonała organizacja przez właścicieli, wygodne i czyste pokoje z łazienkami TV i WI- FI, oraz piękna pogoda. Wszędzie blisko. Polecam gorąco.', ocena: 4.5},
-        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
-        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
-        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
-        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
-        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
-        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
-        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
-        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
-        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
+        {avatar: '/main/00000.png', nick: 'Natalia A', opinia: 'Bardzo miłe i przyjaźne miejsce, wszędzie blisko, dobre warunki.', ocena: 4.5},
+        {avatar: '/main/00000.png', nick: 'Anna T', opinia: 'Bardzo ładna miejscówka, ukwiecona, czysciótka, właściciele przesympatyczni, jedzonko bardzo smaczne, urozmaicone, śniadania, kolacje szwecki stół.', ocena: 4.5},
+        {avatar: '/main/00000.png', nick: 'Daniel S', opinia: 'Ośrodek ma bardzo miłą obsługę, plac zabaw dla dzieci i z ośrodka wszędzie jest blisko! Cieszy nas widok nowoczesnej recepcji i rozwijających się domków...', ocena: 4.5},
+        {avatar: '/main/00000.png', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: 4.5},
+        {avatar: '/main/00000.png', nick: 'Magda M', opinia: 'Pyszne jedzenia , przemiła obsługa, doskonała organizacja przez właścicieli, wygodne i czyste pokoje z łazienkami TV i WI- FI, oraz piękna pogoda...', ocena: 4.5},
+        {avatar: '/main/00000.png', nick: 'Piotr R', opinia: 'Przemiła atmosfera, bardzo przystępna cena. Muszę pochwalić bogaty wybór jedzenia...', ocena: 4.5},
+        {avatar: '/main/00000.png', nick: 'Jakub J', opinia: 'Polecam ośrodek z oceną mocną oceną 4+. Miła obsługa, czyste pokoje, zadbany obiekt. Nie ma się do czego przyczepić...', ocena: 4.5},
     ]
     let scroll = 0
     let pspeed = 0.1

@@ -63,7 +63,7 @@
     <div class="drawer" in:fly={{delay: 50, duration: 300, x: 200}} out:fly={{delay: 50, duration: 200, x: 200}}>
         <ul in:fly={{delay: 200, duration: 250, x: 200}} out:fly={{delay: 0, duration: 200, x: 200}}>
             {#each navlinks as {nazwa, link}, i}
-            <li><a href={link}>{nazwa}</a></li>
+            <li><a href={link}><div>{nazwa}</div></a></li>
             {/each}
         </ul>
         <hr>

@@ -7,7 +7,7 @@
 </script>
 
 <Header />
-<Oferta />
 <Opinie />
 <Pokoje />
+<Oferta />
 <Form />
