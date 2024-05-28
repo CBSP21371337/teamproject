@@ -34,6 +34,8 @@
     {/if}
 </div> -->
 
+<button class="outclick_check" on:click={closeDrawer}></button>
+
 <div class="burger-menu">
     <button on:click={Drawer}>
         <svg width="70" height="70" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger-svg">
@@ -68,8 +70,6 @@
     </div>
     {/if}
 </nav>
-
-<button class="outclick_check" on:click={closeDrawer}></button>
     
 
 <style>
@@ -78,9 +78,9 @@
         margin: 25px 0;
     }
     .outclick_check{
-        position: absolute;
-        width: 80%;
-        height: 100vh;
+        position: fixed;
+        width: 100%;
+        height: 100%;
         left: 0;
         top: 0;
         cursor: default;
