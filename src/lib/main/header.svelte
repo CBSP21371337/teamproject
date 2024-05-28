@@ -11,7 +11,7 @@
 <style>
     .header{
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         overflow: hidden;
         position: relative;
         z-index: -5;
@@ -19,7 +19,6 @@
     }
     img{
         width: 100%;
-        height: 90vh;
         position: absolute;
         bottom: 0;
         z-index: -5;

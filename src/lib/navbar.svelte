@@ -18,7 +18,7 @@
         {nazwa: 'Strona Główna', link: '/'},
         {nazwa: 'O nas', link: '/'},
         {nazwa: 'Kontakt', link: '/'},
-        {nazwa: 'FAQ', link: '/'},
+        {nazwa: 'FAQ', link: '/faq'},
         {nazwa: 'Pokoje', link: '/'},
         {nazwa: 'Regulamin', link: '/'},
         {nazwa: 'Dla Grup', link: '/'}
