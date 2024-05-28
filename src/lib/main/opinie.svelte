@@ -1,10 +1,13 @@
 <script>
     let opinie = [
-        {logo: '/main/opinie/google-icon.svg', opinia: '9/10', nazwa: 'Google'},
-        {logo: '/main/opinie/google-icon.svg', opinia: '9/10', nazwa: 'Booking'},
-        {logo: '/main/opinie/google-icon.svg', opinia: '9/10', nazwa: 'Chuj wie co'}
+        {link: 'https://www.google.com/travel/search?ts=CAEaIAoAEhwSFAoHCOgPEAUYHBIHCOgPEAUYHRgBMgQIABAA&qs=MiZDaGdJc0p5M2hmV3E2XzZDQVJvTEwyY3ZNWFJvZHpFMWRtNFFBUTgCQhwiGgoWQ0lITTBvZ0tFSUNBZ0lDVXFkX3JNZxAB&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls', logo: '/main/opinie/google-icon.svg', opinia: '4.3/5', nazwa: 'Google'},
+        {link: 'https://www.booking.com/Share-eKEqpJ', logo: '/main/booking.png', opinia: '8.6/10', nazwa: 'Booking'},
+        {link: '', logo: '/main/guestbook.png', opinia: '9/10', nazwa: 'Księga Gości'}
     ]
     let opinieu = [
+        {avatar: '/main/00000.png', nick: 'Magda Malina', opinia: 'Pyszne jedzenia , przemiła obsługa, doskonała organizacja przez właścicieli, wygodne i czyste pokoje z łazienkami TV i WI- FI, oraz piękna pogoda. Wszędzie blisko. Polecam gorąco.', ocena: 4.5},
+        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
+        {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
         {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
         {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
         {avatar: '/main/00000.png', nick: 'Stasiu Stonoga', opinia: 'Bardzo fajny ośrodek, nielimitowana dostawa srajtaśmy do kibla...', ocena: 4.5},
@@ -15,7 +18,7 @@
     ]
     let scroll = 0
     let pspeed = 0.1
-</script>/
+</script>
 
 
 <div class="odkryj">
@@ -24,10 +27,12 @@
 </div>
 
 <div class="opinie">
-    {#each opinie as {logo, opinia,nazwa}, i}
+    {#each opinie as {link, logo, opinia,nazwa}, i}
     <div class="card">
+        <a href={link}>
         <img src={logo} alt={nazwa}>
         <p>{opinia}</p>
+        </a>
     </div>
     {/each}
 </div>
@@ -49,7 +54,7 @@
     .container{
         position: relative;
         margin-top: 50px;
-        height: 150px;
+        height: 220px;
     }
     .opinieu{
         display: flex;
@@ -57,7 +62,7 @@
         overflow: hidden;
         flex-wrap: nowrap;
         position: absolute;
-        left: -12%;
+        left: -20%;
         z-index: -5;
     }
     .opinia{

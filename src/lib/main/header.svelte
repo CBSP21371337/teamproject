@@ -6,17 +6,20 @@
 <svelte:window bind:scrollY={scroll} />
 
 <div class="header">
-    <img src="/main/00000.png" alt="header" style:transform={`translate3d(0 , ${scroll * pspeed}px, 0)`}>
+    <img src="/main/osr.png" alt="header" style:transform={`translate3d(0 , ${scroll * pspeed}px, 0)`}>
 </div>
 <style>
     .header{
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         overflow: hidden;
         position: relative;
         z-index: -5;
+        box-shadow: inset 0 -5px 20px #000;
     }
     img{
+        width: 100%;
+        height: 90vh;
         position: absolute;
         bottom: 0;
         z-index: -5;

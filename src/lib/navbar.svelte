@@ -36,7 +36,7 @@
 
 <div class="burger-menu">
     <button on:click={Drawer}>
-        <svg width="100" height="70" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger-svg">
+        <svg width="70" height="70" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger-svg">
             <g id="burger-menu">
                 {#if drawer == false}
                 <g id="burger-closed" transition:scale={{duration: 400, opacity: 0, start: 0.4}}>
@@ -142,8 +142,8 @@
         margin: 20px 0;
         position: fixed;
         top: 0;
-        right: 2%;
-        z-index: 9999;
+        right: 1%;
+        z-index: 50;
     }
     /* .burger-menu img{
         width: 60px;
