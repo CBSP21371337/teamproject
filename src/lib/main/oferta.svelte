@@ -7,7 +7,6 @@
     ]
 </script>
 
-
 <section class="oferta" style="margin-bottom: 50px;">
     <h1>Oferta Ośrodka</h1>
     <div class="container">
@@ -20,6 +19,7 @@
         {/each}
     </div>
 </section>
+
 <style>
     h1{
         font-size: 35px;

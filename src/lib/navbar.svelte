@@ -57,7 +57,6 @@
     </button>
 </div>
 
-
 <nav>
     {#if drawer == true}
     <div class="drawer" in:fly={{delay: 50, duration: 300, x: 200}} out:fly={{delay: 50, duration: 200, x: 200}}>
@@ -69,8 +68,7 @@
         <hr>
     </div>
     {/if}
-</nav>
-    
+</nav> 
 
 <style>
     hr{
