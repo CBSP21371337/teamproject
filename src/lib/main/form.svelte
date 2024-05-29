@@ -89,6 +89,7 @@
         </div>
     </div>
 </div>
+
 <style>
     @media screen and (min-width: 1024px) {
         .card-move {
@@ -134,115 +135,117 @@
 
     @media screen and (max-width: 1024px) {
         .card-front, .card-back {
-        width: 100%;
-        height: 100%;
-        background-color: #2a2b38;
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
-        background-position: bottom center;
-        background-repeat: no-repeat;
-        background-size: 300%;
-        position: absolute;
-        border-radius: 6px;
-        left: 0;
-        top: 0;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
-        -o-backface-visibility: hidden;
-        backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
+            background-color: #2a2b38;
+            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            background-size: 300%;
+            position: absolute;
+            border-radius: 6px;
+            left: 0;
+            top: 0;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+        .full-height{
+            min-height: 100vh;
+        }
+
+        [type="checkbox"]:checked,
+        [type="checkbox"]:not(:checked){
+            position: absolute;
+            left: -9999px;
+        }
+
+        [type="checkbox"]:checked,
+        [type="checkbox"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .checkbox:checked + label,
+        .checkbox:not(:checked) + label {
+            position: relative;
+            display: block;
+            text-align: center;
+            width: 60px;
+            height: 16px;
+            border-radius: 8px;
+            padding: 0;
+            margin: 10px auto;
+            cursor: pointer;
+            background-color: #ffeba7;
+        }
+
+        .checkbox:checked + label:before,
+        .checkbox:not(:checked) + label:before {
+            position: absolute;
+            display: block;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            color: #ffeba7;
+            background-color: #102770;
+            z-index: 20;
+            top: -10px;
+            left: -10px;
+            line-height: 36px;
+            text-align: center;
+            font-size: 24px;
+            transition: all 0.5s ease;
+        }
+
+        .checkbox:not(:checked) + label:before {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 36 36'%3E%3Cpath fill='gold' d='M21 12H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1M8 10h12V7.94H8Z' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='gold' d='M21 14.08H7a1 1 0 0 0-1 1V19a1 1 0 0 0 1 1h11.36L22 16.3v-1.22a1 1 0 0 0-1-1M20 18H8v-2h12Z' class='clr-i-outline clr-i-outline-path-2'/%3E%3Cpath fill='gold' d='M11.06 31.51v-.06l.32-1.39H4V4h20v10.25l2-1.89V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v28a1 1 0 0 0 1 1h8a3.44 3.44 0 0 1 .06-.49' class='clr-i-outline clr-i-outline-path-3'/%3E%3Cpath fill='gold' d='m22 19.17l-.78.79a1 1 0 0 0 .78-.79' class='clr-i-outline clr-i-outline-path-4'/%3E%3Cpath fill='gold' d='M6 26.94a1 1 0 0 0 1 1h4.84l.3-1.3l.13-.55v-.05H8V24h6.34l2-2H7a1 1 0 0 0-1 1Z' class='clr-i-outline clr-i-outline-path-5'/%3E%3Cpath fill='gold' d='m33.49 16.67l-3.37-3.37a1.61 1.61 0 0 0-2.28 0L14.13 27.09L13 31.9a1.61 1.61 0 0 0 1.26 1.9a1.55 1.55 0 0 0 .31 0a1.15 1.15 0 0 0 .37 0l4.85-1.07L33.49 19a1.6 1.6 0 0 0 0-2.27ZM18.77 30.91l-3.66.81l.89-3.63L26.28 17.7l2.82 2.82Zm11.46-11.52l-2.82-2.82L29 15l2.84 2.84Z' class='clr-i-outline clr-i-outline-path-6'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
+        }
+
+        .checkbox:checked + label:before {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 20 20'%3E%3Cpath fill='gold' d='M12.432 0c1.34 0 2.01.912 2.01 1.957c0 1.305-1.164 2.512-2.679 2.512c-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0M8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141c-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467c1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271c.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20'/%3E%3C/svg%3E");
+        }
+
+        .checkbox:checked + label:before {
+            transform: translateX(44px) rotate(-360deg);
+        }
+
+        .checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
+            transform: rotateY(180deg);
+        }
+
+        .card-3d-wrap {
+            position: relative;
+            width: 440px;
+            max-width: 100%;
+            height: 650px;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            perspective: 800px;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card-3d-wrapper {
+            width: 100%;
+            height: 100%;
+            position:absolute;    
+            top: 0;
+            left: 0;  
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            transition: all 600ms ease-out; 
+        }
     }
 
-    .card-back {
-        transform: rotateY(180deg);
-    }
-    .full-height{
-        min-height: 100vh;
-    }
-    [type="checkbox"]:checked,
-    [type="checkbox"]:not(:checked){
-        position: absolute;
-        left: -9999px;
-    }
-
-    [type="checkbox"]:checked,
-    [type="checkbox"]:not(:checked) {
-        position: absolute;
-        left: -9999px;
-    }
-
-    .checkbox:checked + label,
-    .checkbox:not(:checked) + label {
-        position: relative;
-        display: block;
-        text-align: center;
-        width: 60px;
-        height: 16px;
-        border-radius: 8px;
-        padding: 0;
-        margin: 10px auto;
-        cursor: pointer;
-        background-color: #ffeba7;
-    }
-
-    .checkbox:checked + label:before,
-    .checkbox:not(:checked) + label:before {
-        position: absolute;
-        display: block;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        color: #ffeba7;
-        background-color: #102770;
-        z-index: 20;
-        top: -10px;
-        left: -10px;
-        line-height: 36px;
-        text-align: center;
-        font-size: 24px;
-        transition: all 0.5s ease;
-    }
-
-    .checkbox:not(:checked) + label:before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 36 36'%3E%3Cpath fill='gold' d='M21 12H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1M8 10h12V7.94H8Z' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='gold' d='M21 14.08H7a1 1 0 0 0-1 1V19a1 1 0 0 0 1 1h11.36L22 16.3v-1.22a1 1 0 0 0-1-1M20 18H8v-2h12Z' class='clr-i-outline clr-i-outline-path-2'/%3E%3Cpath fill='gold' d='M11.06 31.51v-.06l.32-1.39H4V4h20v10.25l2-1.89V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v28a1 1 0 0 0 1 1h8a3.44 3.44 0 0 1 .06-.49' class='clr-i-outline clr-i-outline-path-3'/%3E%3Cpath fill='gold' d='m22 19.17l-.78.79a1 1 0 0 0 .78-.79' class='clr-i-outline clr-i-outline-path-4'/%3E%3Cpath fill='gold' d='M6 26.94a1 1 0 0 0 1 1h4.84l.3-1.3l.13-.55v-.05H8V24h6.34l2-2H7a1 1 0 0 0-1 1Z' class='clr-i-outline clr-i-outline-path-5'/%3E%3Cpath fill='gold' d='m33.49 16.67l-3.37-3.37a1.61 1.61 0 0 0-2.28 0L14.13 27.09L13 31.9a1.61 1.61 0 0 0 1.26 1.9a1.55 1.55 0 0 0 .31 0a1.15 1.15 0 0 0 .37 0l4.85-1.07L33.49 19a1.6 1.6 0 0 0 0-2.27ZM18.77 30.91l-3.66.81l.89-3.63L26.28 17.7l2.82 2.82Zm11.46-11.52l-2.82-2.82L29 15l2.84 2.84Z' class='clr-i-outline clr-i-outline-path-6'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
-    }
-
-    .checkbox:checked + label:before {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 20 20'%3E%3Cpath fill='gold' d='M12.432 0c1.34 0 2.01.912 2.01 1.957c0 1.305-1.164 2.512-2.679 2.512c-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0M8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141c-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467c1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271c.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20'/%3E%3C/svg%3E");
-    }
-
-    .checkbox:checked + label:before {
-        transform: translateX(44px) rotate(-360deg);
-    }
-
-    .checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
-        transform: rotateY(180deg);
-    }
-
-    .card-3d-wrap {
-        position: relative;
-        width: 440px;
-        max-width: 100%;
-        height: 650px;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        perspective: 800px;
-        margin-top: 60px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .card-3d-wrapper {
-        width: 100%;
-        height: 100%;
-        position:absolute;    
-        top: 0;
-        left: 0;  
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        transition: all 600ms ease-out; 
-    }
-
-    }
     @media screen and (min-width: 1024px) {
         .reginlg {
             visibility: hidden;

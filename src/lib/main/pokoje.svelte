@@ -5,7 +5,7 @@
 
 <svelte:window bind:scrollY={scroll} />
 
-<div class='header'>
+<div class="header">
     <section>
         <img src="/main/DOMKI-MAIN.webp" alt="pokoje" style:transform={`translate3d(0 , ${scroll * pspeed}px, 0)`}>
         <div class='napisy'></div>

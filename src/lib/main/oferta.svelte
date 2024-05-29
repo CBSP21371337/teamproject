@@ -1,7 +1,7 @@
 <script>
     let ofera = [
         {src: '/main/oferta/stolowka.svg', name: "Stołówka", alt: 'stołówka', desc: 'To jest krótki opis do danej oferty'},
-        {src: '/main/oferta/stolowka.svg', name: "Monitoring", alt: 'monitoring', desc: 'To jest krótki opis do danej oferty'},
+        {src: '/main/oferta/cctv.svg', name: "Monitoring", alt: 'monitoring', desc: 'To jest krótki opis do danej oferty'},
         {src: '/main/oferta/playground.svg', name: "Plac Zabaw", alt: 'pzabaw', desc: 'To jest krótki opis do danej oferty'},
         {src: '/main/oferta/wifi.svg', name: "Wifi", alt: 'wifi', desc: 'To jest krótki opis do danej oferty'}
     ]

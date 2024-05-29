@@ -16,7 +16,6 @@
         {question: 'Czy ośrodek przyjmuje grupy zorganizowane, itp.?', anwser: 'Tak, szczegółowe informacje można znaleźć na stronie (strona do grupy), lub poprzez kontakt tel: +48606446539.', state: false},
         {question: 'Czy plaża jest strzeżona?', anwser: 'Tak, plaża w Pobierowie jest strzeżona przez ratowników RWR, oraz WOPR.', state: false},
         {question: 'Ile wynosi opłata klimatyczna?', anwser: 'Opłata klimatyczna wynosi 2.50 zł za osobę (cena może się w każdej chwili zmienić)', state: false},
-
     ]
 </script>
 
@@ -32,15 +31,7 @@
         }}> </button>
         <div class="question">
             <h2>{question}</h2>
-            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                
-                <g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#00e1ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
-                
-            </svg>
+            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#00e1ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
         </div>
         {#if state == true}
         <div class="anwser" transition:slide={{duration: 450, delay: 25}}><p>{anwser}</p></div>
