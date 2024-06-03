@@ -19,7 +19,7 @@
         {nazwa: 'O nas', link: '/'},
         {nazwa: 'Kontakt', link: '/'},
         {nazwa: 'FAQ', link: '/faq'},
-        {nazwa: 'Pokoje', link: '/'},
+        {nazwa: 'Pokoje', link: '/pokoje'},
         {nazwa: 'Regulamin', link: '/'},
         {nazwa: 'Dla Grup', link: '/'}
     ]
@@ -32,7 +32,7 @@
     ]
 </script>
 
-<!-- <div class="burger-menu">
+<!-- <div class="burger-menu"> SAVE
     {#if drawer == true}
     <button on:click={Drawer}><img src="/important/burger-menu.svg" alt="menu open"></button>
     {/if}

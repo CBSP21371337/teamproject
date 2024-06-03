@@ -66,11 +66,10 @@
     .opinia{
         margin: 0 20px;
         width: 300px;
-        height: 100px;
-        height: fit-content;
+        height: 250px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content:flex-start;
         background-color: rgb(235, 235, 235);
         border-radius: 30px;
         padding: 10px;
