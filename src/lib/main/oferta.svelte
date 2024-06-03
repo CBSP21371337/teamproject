@@ -7,7 +7,7 @@
     ]
 </script>
 
-<section class="oferta" style="margin-bottom: 50px;">
+<section class="oferta" style="margin-bottom: 20px;">
     <h1>Oferta Ośrodka</h1>
     <div class="container">
         {#each ofera as {src, name, alt, desc}, i}

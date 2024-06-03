@@ -40,5 +40,6 @@
         position: absolute;
         bottom: 0;
         z-index: -5;
+        filter: brightness(0.8);
     }
 </style>

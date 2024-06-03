@@ -23,6 +23,13 @@
         {nazwa: 'Regulamin', link: '/'},
         {nazwa: 'Dla Grup', link: '/'}
     ]
+
+    let socialicons = [
+        {slogo: '/main/navbar/booking.svg', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala', sopis: 'ss'},
+        {slogo: '/main/navbar/google.svg', slink: '', sopis: ''},
+        {slogo: '/main/navbar/facebook.svg', slink: '', sopis: ''},
+        {slogo: '/main/navbar/instagram.svg', slink: '', sopis: ''}
+    ]
 </script>
 
 <!-- <div class="burger-menu">
@@ -66,11 +73,23 @@
             {/each}
         </ul>
         <hr>
+        <h3 style="padding-bottom: 15px;">Odwiedź nas na:</h3>
+        <div class="social-container-navbar">
+            {#each socialicons as {slogo, slink, sopis}}
+                <div><a href={slink}><div><img src={slogo} alt={sopis}></div></a></div>
+            {/each}
+        </div>
     </div>
     {/if}
 </nav> 
 
 <style>
+    .social-container-navbar {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        
+    }
     hr{
         border-top: 1px solid black;
         margin: 25px 0;
