@@ -34,9 +34,9 @@
         position: absolute;
         z-index: -5;
         width: 100%;
-        height: 160%;
+        height: 140%;
         filter: brightness(50%);
-        bottom: 80%;
+        top: -100%;
     }
     p{
         font-size: 40px;
