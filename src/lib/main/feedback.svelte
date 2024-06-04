@@ -1,6 +1,6 @@
 <script>
     let scroll = 0
-    let pspeed = 0.1
+    let pspeed = 0.4
     let opinieu = [
         {avatar: '/main/ptak.jpg', nick: 'Natalia A', opinia: 'Bardzo miłe i przyjaźne miejsce, wszędzie blisko, dobre warunki...', ocena: '★★★★★'},
         {avatar: '/main/ptak.jpg', nick: 'Anna T', opinia: 'Bardzo ładna miejscówka, ukwiecona, czysciótka, właściciele przesympatyczni, jedzonko bardzo smaczne, urozmaicone, śniadania, kolacje szwecki stół...', ocena: '★★★★★'},
@@ -10,6 +10,10 @@
         {avatar: '/main/ptak.jpg', nick: 'Piotr R', opinia: 'Przemiła atmosfera, bardzo przystępna cena. Muszę pochwalić bogaty wybór jedzenia...', ocena: '★★★★☆'},
         {avatar: '/main/ptak.jpg', nick: 'Jakub J', opinia: 'Polecam ośrodek z oceną mocną oceną 4+. Miła obsługa, czyste pokoje, zadbany obiekt. Nie ma się do czego przyczepić...', ocena: '★★★★★'},
         {avatar: '/main/ptak.jpg', nick: 'Natalia A', opinia: 'Bardzo miłe i przyjaźne miejsce, wszędzie blisko, dobre warunki...', ocena: '★★★★★'},
+        {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
         {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
     ]
 </script>
@@ -30,10 +34,10 @@
 <style>
     #feedback {
         position: relative;
-        margin-top: 50px;
         height: 220px;
         color: black;
         text-align: center;
+        overflow: hidden;
     }
     #feedback .reviews {
         display: flex;
@@ -41,13 +45,13 @@
         overflow: hidden;
         flex-wrap: nowrap;
         position: absolute;
-        left: -20%;
+        left: -90%;
         z-index: -5;
     }
     #feedback .text {
         margin: 0 20px;
         width: 300px;
-        height: 250px;
+        height: 220px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;

@@ -48,7 +48,7 @@
                     <div class="section">
                         <p>
                             <b style="font-size: 20px;">Ośrodek Wczasowy „KALA”</b><br>
-                            <a href="https://maps.app.goo.gl/teNF2gZ1h68BXJ9w8">ul. Moniuszki 5, 72-346 Pobierowo</a><br>
+                            <a href="https://maps.app.goo.gl/teNF2gZ1h68BXJ9w8" target="_blank">ul. Moniuszki 5, 72-346 Pobierowo</a><br>
                             <b style="font-size: 20px;">Informacja i rezerwacja:</b><br>
                             e-mail: <a href="mailto:recepcja@owkala.pl">recepcja@owkala.pl</a><br>
                             tel./fax: <a href="tel:+48913864292">91 38 64 292</a><br>
@@ -72,7 +72,7 @@
             max-width: 100%;
             height: 650px;
             perspective: 800px;
-            margin-top: 30px;
+            margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -184,7 +184,7 @@
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
             perspective: 800px;
-            margin-top: 60px;
+            margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
         }

@@ -11,7 +11,7 @@
 <Header />
 <Opinions />
 <!-- <Discover /> -->
+<Feedback />
 <Rooms />
-<!-- <Feedback /> -->
 <!-- <Offer /> -->
 <Form />

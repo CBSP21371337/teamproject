@@ -1,4 +1,35 @@
 <script>
+    import { onMount, onDestroy } from 'svelte';
+
+    let isVisible = true;
+    let lastScrollTop = 0;
+
+    const handleScroll = () => {
+      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+      if (currentScrollTop > lastScrollTop) {
+        isVisible = false;
+      } else if (currentScrollTop <= 0) {
+        isVisible = true;
+      } else {
+        isVisible = false;
+      }
+
+      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    };
+
+    onMount(() => {
+      if (typeof window !== 'undefined') {
+        window.addEventListener('scroll', handleScroll);
+      }
+    });
+
+    onDestroy(() => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    });
+
     import {fly, scale} from 'svelte/transition'
     let drawer = false;
     function Drawer() {
@@ -16,7 +47,7 @@
 
     let navlinks = [
         {nazwa: 'Strona Główna', link: '/'},
-        {nazwa: 'Kontakt', link: '/kontakt'},
+        {nazwa: 'Kontakt', link: '/#form'},
         {nazwa: 'FAQ', link: '/faq'},
         {nazwa: 'Pokoje', link: '/pokoje'},
         {nazwa: 'Regulamin', link: '/regulamin'},
@@ -25,10 +56,14 @@
     ]
 
     let socialicons = [
-        {slogo: '/main/navbar/booking.svg', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala', sopis: 'ss'},
-        {slogo: '/main/navbar/google.svg', slink: '', sopis: ''},
-        {slogo: '/main/navbar/facebook.svg', slink: '', sopis: ''},
-        {slogo: '/main/navbar/instagram.svg', slink: '', sopis: ''}
+        {slogo: '/navbar/booking.svg', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala.pl.html', sopis: 'Booking'},
+        {slogo: '/navbar/google.svg', slink: 'https://g.co/kgs/dL4CMUa', sopis: 'Google'},
+        {slogo: '/navbar/facebook.svg', slink: 'https://www.facebook.com/kalapobierowo', sopis: 'Facebook'},
+        {slogo: '/navbar/instagram.svg', slink: 'https://www.instagram.com/ow.kala', sopis: 'Instagram'}
+    ]
+    let side = [
+        {simg: '/navbar/bookingrating.png', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala', salt: 'Booking rating'},
+        {simg: '/navbar/facebook.png', slink: 'https://www.facebook.com/kalapobierowo', salt: 'Facebook'}
     ]
 </script>
 
@@ -40,8 +75,12 @@
     <button on:click={Drawer}><img src="/important/burger-menu-closed.svg" alt="menu open"></button>
     {/if}
 </div> -->
-<div class="navbarside">
-
+<div class="navbarside {isVisible ? 'visible' : 'hidden'}">
+    <div class="nav-item"></div>
+    {#each side as {slink, simg, salt}}
+    <div class="separator"></div>
+    <div class="nav-item"><a href={slink} target="_blank"><img src={simg} alt={salt}></a></div>
+    {/each}
 </div>
 <div class="navbartop">
 <a href="/"><img src="/important/kala.png" alt="kala logo"></a>
@@ -89,23 +128,49 @@
 </nav> 
 
 <style>
+    .nav-item img {
+        width: 70px;
+        height: 70px;
+    }
+    .separator {
+        width: 100%;
+        height: 2px;
+        background-color: #808080;
+    }
+    .nav-item {
+        padding: 15px;
+        color: white;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
     .navbarside {
-        background-color: black;
-        opacity: 0.3;
+        background-color: rgba(0, 0, 0, 0.3);
         width: 100px;
         height: 100%;
         right: 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         position: fixed;
         bottom: 0;
         z-index: 1;
+        transition: transform 0.3s;
     }
-    .navbartop img {
-        max-width: 350px;
-        min-width: 200px;
+    .hidden {
+      transform: translateX(100%);
+    }
+    .visible {
+      transform: translateX(0);
+    }
+    .navbartop a {
+        width: 250px;
         position: fixed;
+        float: none;
+        display: block;
+        text-align: left;
         z-index: 2;
+        margin-top: 13px;
+        margin-left: 15px;
     }
     .top-menu {
         background-color: black;
@@ -138,8 +203,13 @@
     nav{
         position: fixed;
         right: 0;
-        width: 20%;
         z-index: 3;
+    }
+    @media screen and (max-width: 500px) {
+        nav {
+        width: 100%;
+        height: 100%;
+        }
     }
     .drawer{
         background-color: #fff;
@@ -190,10 +260,10 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        margin: 20px 0;
+        margin: 15px 0;
         position: fixed;
         top: 0;
-        right: 1%;
+        right: 0.8%;
         z-index: 50;
     }
     /* .burger-menu img{

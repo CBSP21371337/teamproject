@@ -15,12 +15,11 @@
 div {
     flex: 1;
     margin: 2px;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid black;
     font-size: 40px;
     color: white;
     font-weight: 400;
@@ -30,12 +29,15 @@ div {
 }
 #opinions .facebook {
     background-image: url('/main/opinions/facebook.png');
+    background-size: contain;
 }
 #opinions .booking {
     background-image: url('/main/opinions/booking.png');
+    background-size: contain;
 }
 #opinions .user {
-    background-image: url('/main/opinions/user.png');
+    background-image: url('/main/opinions/dodajopinie.png');
+    background-size: contain;
 }
 #opinions img {
     margin: auto;

@@ -17,7 +17,19 @@
         {question: 'Czy plaża jest strzeżona?', anwser: 'Tak, plaża w Pobierowie jest strzeżona przez ratowników RWR, oraz WOPR.', state: false},
         {question: 'Ile wynosi opłata klimatyczna?', anwser: 'Opłata klimatyczna wynosi 2.50 zł za osobę (cena może się w każdej chwili zmienić)', state: false},
     ]
+    let scroll = 0
+    let pspeed = 0.4
 </script>
+
+<svelte:window bind:scrollY={scroll} />
+
+<header>
+    <div class="image" style:transform={`translate3d(0, ${scroll * pspeed}px, 0)`}></div>
+    <div class="description">
+        <h1>FAQ</h1>
+        <p>Najczęściej zadawane pytania!</p>
+    </div>
+</header>
 
 <section class="qcontainer">
     {#each questions as {question, anwser, state}, i}
@@ -41,18 +53,54 @@
 </section>
 
 <style>
-    .qcard button{
+    header {
+        height: 100vh;
+        overflow: hidden;
+        box-shadow: inset 0 -5px 20px #000;
+    }
+    header .image {
+        background-image: url('/faq/faq.png');
+        background-size: cover;
+        background-position: center;
+        filter: brightness(0.8);
+        z-index: -5;
+        height: 100vh;
+        position: relative;
+    }
+    header .description {
+        width: 100vw;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        z-index: 0;
+    }
+    header h1 {
+        font-size: 60px;
+        color: white;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    header p {
+        font-size: 30px;
+        color: rgb(215, 215, 215);
+    }
+    .qcard button {
         z-index: 5;
         width: 100%;
         height: 100%;
         position: absolute;
     }
-    .qcontainer{
+    section {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         width: 60%;
         margin: 0 auto;
+        padding-bottom: 100px;
+        padding-top: 50px;
     }
     .qcard{
         border: rgb(158, 158, 158) 1px solid;
@@ -61,19 +109,19 @@
         position: relative;
         margin: 20px 0;
     }
-    .question{
+    .question {
         display: flex;
         flex-direction: row;  
         justify-content: space-between;
         align-items: center;
         padding: 20px;
     }
-    .question h2{
+    .question h2 {
         color: white;
         margin-right: 20px;
         font-size: 30px;
     }
-    .anwser p{
+    .anwser p {
         font-size: 20px;
         padding: 0 0 20px 20px;
     }
