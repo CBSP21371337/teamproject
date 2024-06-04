@@ -1,112 +1,82 @@
-<div class="form">
-    <div class="row full-height">
-        <div class="col-12 text-center align-self-center py-5">
-            <div class="section text-center">
-                <h6 class="mb-0 pb-3 reginlg" style="transform: translate(-10px);">
-                    <span>Kontakt</span>
-                    <span>Info</span>
-                </h6>
-                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-                <label for="reg-log" class="reginlg"></label>
-                <div class="card-3d-wrap card-2d-wrap card-move">
-                    <div class="card-3d-wrapper">
-                        <div class="card-front card-front-2d1">
-                            <div class="center-wrap">
-                                <div class="section text-center">
-                                    <h4 class="pb-3">Formularz kontaktowy</h4>
-                                    <label>
-                                        <div class="form-group">
-                                            <input type="text" name="logemail" class="form-style" placeholder="Imię i nazwisko" id="" maxlength="32">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="input-icon"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z"/></svg>
-                                                <div class="tooltip input-icon-right">
-                                                    <span class="tooltiptext"><p>Imię i nazwisko</p></span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
-                                                </div>
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <div class="form-group">
-                                            <input type="email" name="logpass" class="form-style" placeholder="Adres e-mail" id="" autocomplete="on" maxlength="32">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="input-icon"><path fill="currentColor" d="M12 2a10 10 0 1 0 5 18.66a1 1 0 1 0-1-1.73A8 8 0 1 1 20 12v.75a1.75 1.75 0 0 1-3.5 0V8.5a1 1 0 0 0-1-1a1 1 0 0 0-1 .79A4.45 4.45 0 0 0 12 7.5a4.5 4.5 0 1 0 3.3 7.5a3.74 3.74 0 0 0 6.7-2.25V12A10 10 0 0 0 12 2m0 12.5a2.5 2.5 0 1 1 2.5-2.5a2.5 2.5 0 0 1-2.5 2.5"/></svg>
-                                            <div class="tooltip input-icon-right">
-                                                <span class="tooltiptext"><p>Adres e-mail</p></span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <div class="form-group">
-                                            <input type="tel" name="logpass" class="form-style" placeholder="Telefon" id="" maxlength="32">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="input-icon"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
-                                            <div class="tooltip input-icon-right">
-                                                <span class="tooltiptext"><p>Telefon</p></span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <div class="form-group">
-                                            <input type="password" name="logpass" class="form-style" placeholder="date ranger Przyjazd - Wyjazd" id="" autocomplete="off" maxlength="32">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="input-icon"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 4.625H7a4 4 0 0 0-4 4v8.75a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4v-8.75a4 4 0 0 0-4-4m-14 6h18m-4-8v4m-10-4v4m.375 7.515h1.028m7.194 0h1.028m-5.139 0h1.028m-5.139 3.084h1.028m7.194 0h1.028m-5.139 0h1.028"/></svg>
-                                            <div class="tooltip input-icon-right">
-                                                <span class="tooltiptext"><p>Przyjazd - Wyjazd</p></span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <div class="form-group">
-                                            <textarea name="logpass" class="form-style" placeholder="Wiadomość" id="" />
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="input-icon"><path fill="currentColor" d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994zM20 19V8.994A4.004 4.004 0 0 0 16 5H8a3.99 3.99 0 0 0-4 3.994v6.012A4.004 4.004 0 0 0 8 19zm-6-8h2v2h-2zm-6 0h2v2H8z"/></svg>
-                                            <div class="tooltip input-icon-right">
-                                                <span class="tooltiptext"><p>Wiadomość</p></span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <a href="https://owkala.pl" class="btn mt-4">wyślij</a>
+<script>
+    const people = `<path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z"/>`;
+    const handle = `<path fill="currentColor" d="M12 2a10 10 0 1 0 5 18.66a1 1 0 1 0-1-1.73A8 8 0 1 1 20 12v.75a1.75 1.75 0 0 1-3.5 0V8.5a1 1 0 0 0-1-1a1 1 0 0 0-1 .79A4.45 4.45 0 0 0 12 7.5a4.5 4.5 0 1 0 3.3 7.5a3.74 3.74 0 0 0 6.7-2.25V12A10 10 0 0 0 12 2m0 12.5a2.5 2.5 0 1 1 2.5-2.5a2.5 2.5 0 0 1-2.5 2.5"/>`
+    const phone = `<path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/>`
+    const calendar = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 4.625H7a4 4 0 0 0-4 4v8.75a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4v-8.75a4 4 0 0 0-4-4m-14 6h18m-4-8v4m-10-4v4m.375 7.515h1.028m7.194 0h1.028m-5.139 0h1.028m-5.139 3.084h1.028m7.194 0h1.028m-5.139 0h1.028"/>`
+    const message = `<path fill="currentColor" d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994zM20 19V8.994A4.004 4.004 0 0 0 16 5H8a3.99 3.99 0 0 0-4 3.994v6.012A4.004 4.004 0 0 0 8 19zm-6-8h2v2h-2zm-6 0h2v2H8z"/>`
+    
+    let form = [
+        {type: '', name: '', id: '', icon: people, tooltip: 'Imię i nazwisko', displayname: 'Imię i nazwisko'},
+        {type: '', name: '', id: '', icon: handle, tooltip: 'Adres e-mail', displayname: 'Adres e-mail'},
+        {type: '', name: '', id: '', icon: phone, tooltip: 'Telefon', displayname: 'Telefon'},
+        {type: '', name: '', id: '', icon: calendar, tooltip: 'Przyjazd - Wyjazd', displayname: 'Przyjazd - Wyjazd'},
+        {type: '', name: '', id: '', icon: message, tooltip: 'Wiadomość', displayname: 'Wiadomość'}
+    ];
+</script>
+
+<section id="form">
+    <h6 class="visible">
+        <span>Kontakt</span>
+        <span>Info</span>
+    </h6>
+    <input class="checkbox" id="visibility" type="checkbox" name="visibility"/>
+    <label for="visibility" class="visible"></label>
+    <div class="style-3d style-2d">
+        <div class="wrap-3d">
+            <div class="front">
+                <div class="center-wrap">
+                    <div class="section">
+                        <h4>Formularz kontaktowy</h4>
+                        {#each form as { type, name, displayname, id, icon, tooltip }}
+                            <label>
+                                <div class="form-group">
+                                    <input type={type} name={name} class="form-style" placeholder={displayname} id={id} maxlength="32">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="input-icon">{@html icon}</svg>
+                                    <div class="tooltip">
+                                        <span class="tooltiptext"><p>{tooltip}</p></span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
+                                    </div>
                                 </div>
-                            </div>
-                      </div>
-                      <div class="card-back card-front-2d">
-                            <div class="center-wrap">
-                                <div class="section text-center">
-                                    <p style="font-size: 15px; line-height: 30px;">
-                                        <b style="font-size: 20px;">Ośrodek Wczasowy „KALA”</b> <br>
-                                        <a href="https://maps.app.goo.gl/teNF2gZ1h68BXJ9w8"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M16 18a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5m0-8a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3"/><path fill="currentColor" d="m16 30l-8.436-9.949a35 35 0 0 1-.348-.451A10.9 10.9 0 0 1 5 13a11 11 0 0 1 22 0a10.9 10.9 0 0 1-2.215 6.597l-.001.003s-.3.394-.345.447ZM8.813 18.395s.233.308.286.374L16 26.908l6.91-8.15c.044-.055.278-.365.279-.366A8.9 8.9 0 0 0 25 13a9 9 0 1 0-18 0a8.9 8.9 0 0 0 1.813 5.395"/></svg>ul. Moniuszki 5, 72-346 Pobierowo</a><br>
-                                        <b>Informacja i rezerwacja:</b> <br>
-                                        <a href="mailto:recepcja@owkala.pl"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"/></svg>recepcja@owkala.pl</a><br>
-                                        <a href="tel:+48913864292"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M256 92.6c-69.6-.1-139.1 11.6-208.56 35.4c0 0-9.87 22.6-17.98 41.3a47 47 0 0 0-3.49 12.2c48.55-18.4 97.13-31 145.63-38c4.5-8.8 13.7-14.6 23.9-14.6h17.3c7.9 0 15.1 3.4 20.1 8.9c15.4-.6 30.8-.7 46.4-.1c4.9-5.5 12.1-8.8 19.8-8.8h17.3c10.1 0 19.1 5.6 23.7 14.1c48.7 6.6 97.2 19.4 145.9 38.3c-.7-4-1.8-8.2-3.5-12c-8.1-18.7-18-41.3-18-41.3c-69.5-23.4-139-35.33-208.5-35.4m-60.5 53.6c-4.7 0-8.8 3.4-9.6 8.1l-6.7 40.4c-12.1 2.2-23.9 5-35.3 8.4c-9.8 3-17.6 10.4-21.2 19.9c-13.8 37-48.72 130.6-48.72 130.6H438s-34.8-93.5-48.7-130.6c-3.5-9.5-11.4-17-21.2-19.9c-11.4-3.4-23.2-6.2-35.3-8.4l-6.8-40.4c-.8-4.7-4.8-8.1-9.6-8.1h-17.3c-4.6 0-8.7 3.2-9.5 7.8l-2.2 10.6h-62.9l-2.2-10.6c-.8-4.6-4.8-7.8-9.5-7.8zm163.8 17.3l-2.7 18.6c5.6 1.4 11.1 2.8 16.4 4.5c14 6.2 25.7 15.7 31.1 27.2l64.8 15.5c6.4-9.8 13.6-18.7 16.3-29.8c-42-16.6-83.9-28.7-125.9-36m-206.5.5c-42 7.5-84.01 19.4-126.02 35.6c3.05 11.7 9.6 19.6 16.31 29.7l64.81-15.5c5.9-13 17.2-23 31-27.2q8.25-2.4 16.5-4.5zM256 197.3c44.7 0 81 30.9 81 69s-36.3 68.9-81 68.9s-81.1-30.8-81.1-68.9s36.4-69 81.1-69m0 17.6c-30.1 0-54.5 20.8-54.5 46.4s24.4 46.4 54.5 46.4s54.4-20.8 54.4-46.4s-24.3-46.4-54.4-46.4M73.97 376.5l21.76 42.9H416.2l21.7-42.9z"/></svg>91 38 64 292</a><br>
-                                        <a href="tel:+48602469714"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m21 15.46l-5.27-.61l-2.52 2.52a15.045 15.045 0 0 1-6.59-6.59l2.53-2.53L8.54 3H3.03C2.45 13.18 10.82 21.55 21 20.97z"/></svg>602 469 714</a><br>
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2341.852859744738!2d14.929234877105728!3d54.058617321191285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa9d1be2779311%3A0x3cca2c07f8d3fc3b!2sMoniuszki%205%2C%2072-346%20Pobierowo!5e0!3m2!1spl!2spl!4v1716925575949!5m2!1spl!2spl" title="Dojazd Ośrodek Wczasowy KALA" width="370px" height="320px" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                            </label>
+                        {/each}
+                        <a href="https://owkala.pl" class="btn">wyślij</a>
+                    </div>
+                </div>
+            </div>
+            <div class="back"> 
+                <div class="center-wrap">
+                    <div class="section">
+                        <p>
+                            <b style="font-size: 20px;">Ośrodek Wczasowy „KALA”</b><br>
+                            <a href="https://maps.app.goo.gl/teNF2gZ1h68BXJ9w8">ul. Moniuszki 5, 72-346 Pobierowo</a><br>
+                            <b style="font-size: 20px;">Informacja i rezerwacja:</b><br>
+                            e-mail: <a href="mailto:recepcja@owkala.pl">recepcja@owkala.pl</a><br>
+                            tel./fax: <a href="tel:+48913864292">91 38 64 292</a><br>
+                            tel. kom.: <a href="tel:+48602469714">602 469 714</a><br>
+                            <b style="font-size: 20px;">Grupy zorganizowane:</b><br>
+                            tel. kom.: <a href="tel:+48606446539">606 446 539</a>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2341.852859744738!2d14.929234877105728!3d54.058617321191285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa9d1be2779311%3A0x3cca2c07f8d3fc3b!2sMoniuszki%205%2C%2072-346%20Pobierowo!5e0!3m2!1spl!2spl!4v1716925575949!5m2!1spl!2spl" title="Dojazd Ośrodek Wczasowy KALA" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <style>
-    @media screen and (min-width: 1024px) {
-        .card-move {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .card-2d-wrap {
+    @media screen and (min-width: 1025px) {
+        #form .style-2d {
             position: relative;
             width: 440px;
             max-width: 100%;
             height: 650px;
             perspective: 800px;
             margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        .card-front-2d1 {
+        #form .front {
             width: 100%;
             height: 100%;
             background-color: #2a2b38;
@@ -118,8 +88,7 @@
             border-radius: 6px;
             right: 52%;
         }
-
-        .card-front-2d {
+        #form .back {
             width: 100%;
             height: 100%;
             background-color: #2a2b38;
@@ -132,9 +101,8 @@
             left: 52%;
         }
     }
-
     @media screen and (max-width: 1024px) {
-        .card-front, .card-back {
+        #form .front, .back {
             width: 100%;
             height: 100%;
             background-color: #2a2b38;
@@ -153,25 +121,21 @@
             -o-backface-visibility: hidden;
             backface-visibility: hidden;
         }
-
-        .card-back {
+        #form .back {
             transform: rotateY(180deg);
         }
-
         [type="checkbox"]:checked,
         [type="checkbox"]:not(:checked){
             position: absolute;
             left: -9999px;
         }
-
         [type="checkbox"]:checked,
         [type="checkbox"]:not(:checked) {
             position: absolute;
             left: -9999px;
         }
-
-        .checkbox:checked + label,
-        .checkbox:not(:checked) + label {
+        #form .checkbox:checked + label,
+        #form .checkbox:not(:checked) + label {
             position: relative;
             display: block;
             text-align: center;
@@ -183,9 +147,8 @@
             cursor: pointer;
             background-color: #ffeba7;
         }
-
-        .checkbox:checked + label:before,
-        .checkbox:not(:checked) + label:before {
+        #form .checkbox:checked + label:before,
+        #form .checkbox:not(:checked) + label:before {
             position: absolute;
             display: block;
             width: 36px;
@@ -201,24 +164,19 @@
             font-size: 24px;
             transition: all 0.5s ease;
         }
-
-        .checkbox:not(:checked) + label:before {
+        #form .checkbox:not(:checked) + label:before {
             content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 36 36'%3E%3Cpath fill='gold' d='M21 12H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1M8 10h12V7.94H8Z' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='gold' d='M21 14.08H7a1 1 0 0 0-1 1V19a1 1 0 0 0 1 1h11.36L22 16.3v-1.22a1 1 0 0 0-1-1M20 18H8v-2h12Z' class='clr-i-outline clr-i-outline-path-2'/%3E%3Cpath fill='gold' d='M11.06 31.51v-.06l.32-1.39H4V4h20v10.25l2-1.89V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v28a1 1 0 0 0 1 1h8a3.44 3.44 0 0 1 .06-.49' class='clr-i-outline clr-i-outline-path-3'/%3E%3Cpath fill='gold' d='m22 19.17l-.78.79a1 1 0 0 0 .78-.79' class='clr-i-outline clr-i-outline-path-4'/%3E%3Cpath fill='gold' d='M6 26.94a1 1 0 0 0 1 1h4.84l.3-1.3l.13-.55v-.05H8V24h6.34l2-2H7a1 1 0 0 0-1 1Z' class='clr-i-outline clr-i-outline-path-5'/%3E%3Cpath fill='gold' d='m33.49 16.67l-3.37-3.37a1.61 1.61 0 0 0-2.28 0L14.13 27.09L13 31.9a1.61 1.61 0 0 0 1.26 1.9a1.55 1.55 0 0 0 .31 0a1.15 1.15 0 0 0 .37 0l4.85-1.07L33.49 19a1.6 1.6 0 0 0 0-2.27ZM18.77 30.91l-3.66.81l.89-3.63L26.28 17.7l2.82 2.82Zm11.46-11.52l-2.82-2.82L29 15l2.84 2.84Z' class='clr-i-outline clr-i-outline-path-6'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
         }
-
-        .checkbox:checked + label:before {
+        #form .checkbox:checked + label:before {
             content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 20 20'%3E%3Cpath fill='gold' d='M12.432 0c1.34 0 2.01.912 2.01 1.957c0 1.305-1.164 2.512-2.679 2.512c-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0M8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141c-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467c1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271c.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20'/%3E%3C/svg%3E");
         }
-
-        .checkbox:checked + label:before {
+        #form .checkbox:checked + label:before {
             transform: translateX(44px) rotate(-360deg);
         }
-
-        .checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
+        #form .checkbox:checked ~ .style-3d .wrap-3d {
             transform: rotateY(180deg);
         }
-
-        .card-3d-wrap {
+        #form .style-3d {
             position: relative;
             width: 440px;
             max-width: 100%;
@@ -230,7 +188,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        .card-3d-wrapper {
+        #form .wrap-3d {
             width: 100%;
             height: 100%;
             position:absolute;    
@@ -241,21 +199,22 @@
             transition: all 600ms ease-out; 
         }
     }
-
-    @media screen and (min-width: 1024px) {
-        .reginlg {
+    @media screen and (min-width: 1025px) {
+        #form .visible {
             visibility: hidden;
         }
-        #reg-log {
+        #form #visibility {
             visibility: hidden;
         }
     }
-
-    iframe {
-        margin-top: 40px;
+    #form iframe {
+        margin-top: 10px;
+        width: 100%;
+        max-height: 20rem;
+        min-height: 18rem;
     }
-
-    .btn{  
+    #form .btn {
+        margin-top: 1rem;
         border-radius: 4px;
         height: 44px;
         font-size: 13px;
@@ -283,15 +242,13 @@
         color: #102770;
         box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
     }
-
-    .form-group{ 
+    #form .form-group{ 
         position: relative;
         display: block;
         margin: 0;
         padding: 0;
     }
-
-    .form-style {
+    #form .form-style {
         padding: 13px 20px;
         padding-left: 55px;
         height: 48px;
@@ -311,17 +268,33 @@
         min-height: 50.2px;
         max-height: 120px;
     }
-
-    .section a {
+    #form .section {
+        text-align: center;
+    }
+    #form .section a {
         color: gray;
         text-decoration: underline;
     }
-
-    label {
+    #form .section p {
+        font-size: 15px; 
+        line-height: 30px;
+    }
+    #form label {
         margin: 2px;
     }
-
-    .tooltip .tooltiptext {
+    .tooltip {
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        height: 10px;
+        font-size: 30px;
+        line-height: 48px;
+        text-align: right;
+        color: fff;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+    }
+    #form .tooltiptext {
         font-size: 16px;
         visibility: hidden;
         width: 120px;
@@ -336,12 +309,10 @@
         margin-left: -20px;
         border: 1px solid black;
     }
-
-    .tooltip:hover .tooltiptext {
+    #form .tooltip:hover .tooltiptext {
       visibility: visible;
     }
-
-    .form {
+    #form {
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
         font-size: 15px;
@@ -350,34 +321,35 @@
         width: 100%;
         margin-bottom: 120px;
     }
-
-    a {
+    #form a {
         cursor: pointer;
         transition: all 200ms linear;
     }
-
-    a:hover {
+    #form a:hover {
         text-decoration: none;
     }
-
-    p {
+    #form p {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.7;
     }
-
-    h4 {
+    #form h4 {
         font-weight: 600;
         font-size: 20px;
+        padding-bottom: 0.75rem;
     }
-
-    h6 span{
+    #form h6 {
+        transform: translate(-10px);
+        text-align: center;
+        padding-bottom: 0.75rem;
+        margin-bottom: 0px;
+    }
+    #form h6 span{
         padding: 0 15px;
         text-transform: uppercase;
         font-weight: 600;
     }
-
-    .center-wrap{
+    #form .center-wrap{
         position: absolute;
         width: 100%;
         padding: 0 35px;
@@ -387,28 +359,13 @@
         z-index: 20;
         display: block;
     }
-
-    .form-style:focus,
-    .form-style:active {
+    #form .form-style:focus,
+    #form .form-style:active {
         border: none;
         outline: none;
         box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
     }
-
-    .input-icon-right {
-        position: absolute;
-        top: 8px;
-        right: 15px;
-        height: 10px;
-        font-size: 30px;
-        line-height: 48px;
-        text-align: right;
-        color: fff;
-        -webkit-transition: all 200ms linear;
-        transition: all 200ms linear;
-    }
-
-    .input-icon {
+    #form .input-icon {
         position: absolute;
         top: 0;
         left: 18px;
@@ -420,67 +377,57 @@
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
     }
-
-    .form-group input:-ms-input-placeholder  {
+    #form .form-group input:-ms-input-placeholder  {
         color: #c4c3ca;
         opacity: 0.7;
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
     }
-
-    .form-group input::-moz-placeholder  {
+    #form .form-group input::-moz-placeholder  {
         color: #c4c3ca;
         opacity: 0.7;
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
     }
-
-    .form-group input:-moz-placeholder  {
+    #form .form-group input:-moz-placeholder  {
         color: #c4c3ca;
         opacity: 0.7;
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
     }
-
-    .form-group input::-webkit-input-placeholder  {
+    #form .form-group input::-webkit-input-placeholder  {
         color: #c4c3ca;
         opacity: 0.7;
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
     }
-
-    .form-group input:focus:-ms-input-placeholder  {
+    #form .form-group input:focus:-ms-input-placeholder  {
         opacity: 0;
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
     }
-
-    .form-group input:focus::-moz-placeholder  {
+    #form .form-group input:focus::-moz-placeholder  {
         opacity: 0;
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
     }
-
-    .form-group input:focus:-moz-placeholder  {
+    #form .form-group input:focus:-moz-placeholder  {
         opacity: 0;
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
     }
-
-    .form-group input:focus::-webkit-input-placeholder  {
+    #form .form-group input:focus::-webkit-input-placeholder  {
         opacity: 0;
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
     }
-
-    .btn:active,
-    .btn:focus{  
+    #form .btn:active,
+    #form .btn:focus{  
         background-color: #102770;
         color: #ffeba7;
         box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
     }
-
-    .btn:hover{  
+    #form .btn:hover{  
         background-color: #102770;
         color: #ffeba7;
         box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);

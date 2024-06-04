@@ -1,13 +1,17 @@
 <script>
-    import Oferta from '$lib/main/oferta.svelte'
+    import Offer from '$lib/main/offer.svelte'
     import Header from '$lib/main/header.svelte'
-    import Opinie from '$lib/main/opinie.svelte';
-    import Pokoje from '$lib/main/pokoje.svelte';
+    import Rooms from '$lib/main/rooms.svelte';
 	import Form from '$lib/main/form.svelte';
+	import Discover from '$lib/main/discover.svelte';
+	import Feedback from '$lib/main/feedback.svelte';
+	import Opinions from '$lib/main/opinions.svelte';
 </script>
 
 <Header />
-<Opinie />
-<Pokoje />
-<Oferta />
+<Opinions />
+<!-- <Discover /> -->
+<Rooms />
+<!-- <Feedback /> -->
+<!-- <Offer /> -->
 <Form />

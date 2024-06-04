@@ -5,44 +5,39 @@
 
 <svelte:window bind:scrollY={scroll} />
 
-<div class="header">
-    <section>
-        <img src="/main/DOMKI-MAIN.webp" alt="pokoje" style:transform={`translate3d(0 , ${scroll * pspeed}px, 0)`}>
-        <div class='napisy'></div>
-        <p>Nasze przytulne pokoje czekają na Ciebie!</p>
-        <button>Sprawdź Teraz</button>
-    </section>
-</div>
+<section id="rooms">
+    <div class="image"></div>
+    <!-- <img src="/main/DOMKI-MAIN.webp" alt="pokoje" style:transform={`translate3d(0 , ${scroll * pspeed}px, 0)`}> -->
+    <p>Nasze przytulne pokoje czekają na Ciebie!</p>
+    <button><a href="/pokoje">Sprawdź Teraz</a></button>
+</section>
 
 <style>
-    .header{
+    #rooms {
         width: 100%;
-        height: 90vh;
+        height: 80vh;
         overflow: hidden;
         margin: 50px auto;
-    }
-    section{
         position: relative;
-        width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    img{
-        position: absolute;
-        z-index: -5;
-        width: 100%;
-        height: 140%;
-        filter: brightness(50%);
-        top: -100%;
-    }
-    p{
         font-size: 40px;
         color: white;
     }
-    button{
+    #rooms .image{
+        background-image: url(/main/DOMKI-MAIN.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        filter: brightness(45%) blur(4px);
+        position: absolute;
+        z-index: -5;
+        width: 100%;
+        height: 100%;
+    }
+    #rooms button{
         padding: 10px 20px;
         border: 2px solid red;
         border-radius: 10px;
@@ -52,9 +47,9 @@
         font-weight: bold;
         text-transform: uppercase;
         transition: all 250ms ease-out;
-        margin-top: 20px;
+        margin-top: 30px;
     }
-    button:hover{
+    #rooms button:hover{
         background-color: rgba(255, 0,0, 1);
         color: black;
         scale: 1.02;

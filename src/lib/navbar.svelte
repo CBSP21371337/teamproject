@@ -16,12 +16,12 @@
 
     let navlinks = [
         {nazwa: 'Strona Główna', link: '/'},
-        {nazwa: 'O nas', link: '/'},
-        {nazwa: 'Kontakt', link: '/'},
+        {nazwa: 'Kontakt', link: '/kontakt'},
         {nazwa: 'FAQ', link: '/faq'},
         {nazwa: 'Pokoje', link: '/pokoje'},
-        {nazwa: 'Regulamin', link: '/'},
-        {nazwa: 'Dla Grup', link: '/'}
+        {nazwa: 'Regulamin', link: '/regulamin'},
+        {nazwa: 'Księga Gości', link: '/ksiega-gosci'},
+        {nazwa: 'Dla Grup', link: '/dla-grup'}
     ]
 
     let socialicons = [
@@ -40,9 +40,14 @@
     <button on:click={Drawer}><img src="/important/burger-menu-closed.svg" alt="menu open"></button>
     {/if}
 </div> -->
+<div class="navbarside">
 
+</div>
+<div class="navbartop">
+<a href="/"><img src="/important/kala.png" alt="kala logo"></a>
+<div class="top-menu"></div>
+</div>
 <button class="outclick_check" on:click={closeDrawer}></button>
-
 <div class="burger-menu">
     <button on:click={Drawer}>
         <svg width="70" height="70" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger-svg">
@@ -76,7 +81,7 @@
         <h3 style="padding-bottom: 15px;">Odwiedź nas na:</h3>
         <div class="social-container-navbar">
             {#each socialicons as {slogo, slink, sopis}}
-                <div><a href={slink}><div><img src={slogo} alt={sopis}></div></a></div>
+            <div><a href={slink}><div><img src={slogo} alt={sopis}></div></a></div>
             {/each}
         </div>
     </div>
@@ -84,11 +89,39 @@
 </nav> 
 
 <style>
+    .navbarside {
+        background-color: black;
+        opacity: 0.3;
+        width: 100px;
+        height: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    .navbartop img {
+        max-width: 350px;
+        min-width: 200px;
+        position: fixed;
+        z-index: 2;
+    }
+    .top-menu {
+        background-color: black;
+        opacity: 0.3;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
     .social-container-navbar {
         display: flex;
         gap: 20px;
         justify-content: center;
-        
     }
     hr{
         border-top: 1px solid black;
@@ -106,6 +139,7 @@
         position: fixed;
         right: 0;
         width: 20%;
+        z-index: 3;
     }
     .drawer{
         background-color: #fff;
