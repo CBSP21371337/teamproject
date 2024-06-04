@@ -62,8 +62,8 @@
         {slogo: '/navbar/instagram.svg', slink: 'https://www.instagram.com/ow.kala', sopis: 'Instagram'}
     ]
     let side = [
-        {simg: '/navbar/bookingrating.png', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala', salt: 'Booking rating'},
-        {simg: '/navbar/facebook.png', slink: 'https://www.facebook.com/kalapobierowo', salt: 'Facebook'}
+        {simg: '/navbar/bookingrating.webp', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala', salt: 'Booking rating'},
+        {simg: '/navbar/facebook.webp', slink: 'https://www.facebook.com/kalapobierowo', salt: 'Facebook'}
     ]
 </script>
 
@@ -83,7 +83,7 @@
     {/each}
 </div>
 <div class="navbartop">
-<a href="/"><img src="/important/kala.png" alt="kala logo"></a>
+<a href="/"><img src="/important/kala.webp" alt="kala logo"></a>
 <div class="top-menu"></div>
 </div>
 <button class="outclick_check" on:click={closeDrawer}></button>

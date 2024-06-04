@@ -1,13 +1,13 @@
 <script>
     let pokoje_def = [
-        {nazwa: 'Apartament 2-Poziomowy', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example'},
-        {nazwa: 'Domki Drewniane', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example'},
-        {nazwa: 'Domki Letniskowe', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example'},
-        {nazwa: 'Dom Rodzinny', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example'},
-        {nazwa: 'Pokój 2 osobowy z tarasem', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example'},
-        {nazwa: 'Pokój 2-3 osobowy', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example'},
-        {nazwa: 'Pokój 3-4 osobowy', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example'},
-        {nazwa: 'Pokój studio 2+2', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example'},
+        {nazwa: 'Apartament 2-Poziomowy', img: '/pokoje/pokojemain/apartament2poziomowy.webp', link: '/example', alt: 'Apartament 2 poziomowy'},
+        {nazwa: 'Pokój 2 osobowy z tarasem', img: '/pokoje/pokojemain/pokoj2osobowytaras.webp', link: '/example', alt: 'Pokój 2 osobowy z tarasem'},
+        {nazwa: 'Domki Drewniane', img: '/pokoje/pokojemain/domkidrewniane.webp', link: '/example', alt: 'Domki drewniane'},
+        {nazwa: 'Domki Letniskowe', img: '/pokoje/pokojemain/domkiletniskowe.webp', link: '/example', alt: 'Domki letniskowe'},
+        {nazwa: 'Dom Rodzinny', img: '/pokoje/pokojemain/domrodzinny.webp', link: '/example', alt: 'Dom rodzinny'},
+        {nazwa: 'Pokój studio 2+2', img: '/pokoje/pokojemain/pokojstudio22.webp', link: '/example', alt: 'Pokój typu studio 2+2 pawilon'},
+        {nazwa: 'Pokój 2-3 osobowy', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example', alt: 'Pokój 2-3 osobowy pawilon'},
+        {nazwa: 'Pokój 3-4 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/example', alt: 'Pokój 3-4 osobowy pawilon'},
     ]
     let scroll = 0
     let pspeed = 0.7
@@ -24,9 +24,9 @@
 </header>
 
 <div class="pokoje_container">
-    {#each pokoje_def as {nazwa, img, link}, i}
+    {#each pokoje_def as {nazwa, img, link, alt}}
         <div class="room">
-            <img src={img} alt='pokoj{i}'>
+            <img src={img} alt={alt}>
             <h2><a href={link}>{nazwa}</a></h2>
         </div>
     {/each}
@@ -35,7 +35,7 @@
 <hr>
 
 <div class="roomout room2">
-    <img src='/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp' alt='pokojspec'>
+    <img src='/pokoje/pokojemain/apartament2poziomowy.webp' alt='pokojspec'>
     <h2><a href='/'>Apartament Lesna Dreams</a></h2>
 </div>
 
@@ -87,7 +87,7 @@
         box-shadow: inset 0 -5px 20px #000;
     }
     header .image {
-        background-image: url('/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp');
+        background-image: url('/pokoje/pokojemain/apartament2poziomowy.webp');
         background-size: cover;
         background-position: center;
         filter: brightness(0.8);

@@ -16,7 +16,7 @@
         box-shadow: inset 0 -5px 20px #000;
     }
     #header .image {
-        background-image: url('/main/osr.png');
+        background-image: url('/main/header/osr.webp');
         background-size: cover;
         background-position: center;
         filter: brightness(0.8);

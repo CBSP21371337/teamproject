@@ -20,7 +20,7 @@
   <div class="footer-container" style="overflow: hidden; padding: auto">
       <div class="footer-box">
         <a href="/">
-          <img src="/main/kalalogo.png" alt="Logo" class="logo">
+          <img src="/footer/kalalogo.webp" alt="Logo kala" class="logo">
         </a>
           <ul class="social-icon">
             {#each ikony as {link, logo}}
@@ -146,7 +146,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background: url("/main/wave.svg");
+    background: url("/footer/wave.svg");
     background-size: 1000px 100px;
   }
   .wave#wave1 {

@@ -27,7 +27,7 @@
         margin-bottom: 50px;
     }
     #rooms .image{
-        background-image: url(/main/DOMKI-MAIN.webp);
+        background-image: url(/main/rooms/domkimain.webp);
         background-repeat: no-repeat;
         background-size: cover;
         filter: brightness(45%) blur(4px);

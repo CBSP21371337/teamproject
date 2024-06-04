@@ -1,20 +1,20 @@
 <script>
     let scroll = 0
-    let pspeed = 0.4
+    let pspeed = 1
     let opinieu = [
-        {avatar: '/main/ptak.jpg', nick: 'Natalia A', opinia: 'Bardzo miłe i przyjaźne miejsce, wszędzie blisko, dobre warunki...', ocena: '★★★★★'},
-        {avatar: '/main/ptak.jpg', nick: 'Anna T', opinia: 'Bardzo ładna miejscówka, ukwiecona, czysciótka, właściciele przesympatyczni, jedzonko bardzo smaczne, urozmaicone, śniadania, kolacje szwecki stół...', ocena: '★★★★★'},
-        {avatar: '/main/ptak.jpg', nick: 'Piotr S', opinia: 'Bardzo dobre warunki oraz mili właściciele, posiłki w postaci bufetu szwedzkiego...', ocena: '★★★★☆'},
-        {avatar: '/main/ptak.jpg', nick: 'Daniel S', opinia: 'Ośrodek ma bardzo miłą obsługę, plac zabaw dla dzieci i z ośrodka wszędzie jest blisko! Cieszy nas widok nowoczesnej recepcji i rozwijających się domków...', ocena: '★★★★★'},
-        {avatar: '/main/ptak.jpg', nick: 'Magda M', opinia: 'Pyszne jedzenia , przemiła obsługa, doskonała organizacja przez właścicieli, wygodne i czyste pokoje z łazienkami TV i WI- FI, oraz piękna pogoda...', ocena: '★★★★☆'},
-        {avatar: '/main/ptak.jpg', nick: 'Piotr R', opinia: 'Przemiła atmosfera, bardzo przystępna cena. Muszę pochwalić bogaty wybór jedzenia...', ocena: '★★★★☆'},
-        {avatar: '/main/ptak.jpg', nick: 'Jakub J', opinia: 'Polecam ośrodek z oceną mocną oceną 4+. Miła obsługa, czyste pokoje, zadbany obiekt. Nie ma się do czego przyczepić...', ocena: '★★★★★'},
-        {avatar: '/main/ptak.jpg', nick: 'Natalia A', opinia: 'Bardzo miłe i przyjaźne miejsce, wszędzie blisko, dobre warunki...', ocena: '★★★★★'},
-        {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
-        {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
-        {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
-        {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
-        {avatar: '/main/ptak.jpg', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.webp', nick: 'Natalia A', opinia: 'Bardzo miłe i przyjaźne miejsce, wszędzie blisko, dobre warunki...', ocena: '★★★★★'},
+        {avatar: '/main/ptak.webp', nick: 'Anna T', opinia: 'Bardzo ładna miejscówka, ukwiecona, czysciótka, właściciele przesympatyczni, jedzonko bardzo smaczne, urozmaicone, śniadania, kolacje szwecki stół...', ocena: '★★★★★'},
+        {avatar: '/main/ptak.webp', nick: 'Piotr S', opinia: 'Bardzo dobre warunki oraz mili właściciele, posiłki w postaci bufetu szwedzkiego...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.webp', nick: 'Daniel S', opinia: 'Ośrodek ma bardzo miłą obsługę, plac zabaw dla dzieci i z ośrodka wszędzie jest blisko! Cieszy nas widok nowoczesnej recepcji i rozwijających się domków...', ocena: '★★★★★'},
+        {avatar: '/main/ptak.webp', nick: 'Magda M', opinia: 'Pyszne jedzenia , przemiła obsługa, doskonała organizacja przez właścicieli, wygodne i czyste pokoje z łazienkami TV i WI- FI, oraz piękna pogoda...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.webp', nick: 'Piotr R', opinia: 'Przemiła atmosfera, bardzo przystępna cena. Muszę pochwalić bogaty wybór jedzenia...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.webp', nick: 'Jakub J', opinia: 'Polecam ośrodek z oceną mocną oceną 4+. Miła obsługa, czyste pokoje, zadbany obiekt. Nie ma się do czego przyczepić...', ocena: '★★★★★'},
+        {avatar: '/main/ptak.webp', nick: 'Natalia A', opinia: 'Bardzo miłe i przyjaźne miejsce, wszędzie blisko, dobre warunki...', ocena: '★★★★★'},
+        {avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
+        {avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆'},
     ]
 </script>
 

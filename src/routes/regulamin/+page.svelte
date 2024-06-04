@@ -22,7 +22,7 @@ let pspeed = 0.7
         margin-bottom: 100px;
     }
     header .image {
-        background-image: url('/regulamin/ptak.jpg');
+        background-image: url('/regulamin/ptak.webp');
         background-size: cover;
         background-position: center;
         filter: brightness(0.8);
