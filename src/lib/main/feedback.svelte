@@ -38,6 +38,8 @@
         color: black;
         text-align: center;
         overflow: hidden;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     #feedback .reviews {
         display: flex;
@@ -45,7 +47,7 @@
         overflow: hidden;
         flex-wrap: nowrap;
         position: absolute;
-        left: -90%;
+        left: -75%;
         z-index: -5;
     }
     #feedback .text {

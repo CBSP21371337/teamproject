@@ -23,6 +23,8 @@
         font-size: 40px;
         color: white;
         text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     #rooms .image{
         background-image: url(/main/DOMKI-MAIN.webp);
@@ -33,7 +35,7 @@
         z-index: -5;
         width: 100vw;
         height: 100vh;
-        top: -60%;
+        top: -80%;
     }
     #rooms button{
         padding: 10px 20px;

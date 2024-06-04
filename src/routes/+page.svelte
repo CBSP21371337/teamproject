@@ -12,6 +12,6 @@
 <Opinions />
 <!-- <Discover /> -->
 <Feedback />
+<Offer />
 <Rooms />
-<!-- <Offer /> -->
 <Form />
