@@ -136,6 +136,7 @@
         }
         #form .checkbox:checked + label,
         #form .checkbox:not(:checked) + label {
+            z-index: 1;
             position: relative;
             display: block;
             text-align: center;
@@ -271,7 +272,7 @@
     #form .section {
         text-align: center;
     }
-    #form .section a {
+    #form .back a {
         color: gray;
         text-decoration: underline;
     }

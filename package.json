@@ -39,6 +39,9 @@
 	"dependencies": {
 		"@svelte-plugins/datepicker": "^1.0.9",
 		"date-picker-svelte": "^2.13.0",
-		"gsap": "^3.12.5"
+		"express": "^4.19.2",
+		"gsap": "^3.12.5",
+		"mysql": "^2.18.1",
+		"mysql2": "^3.10.0"
 	}
 }

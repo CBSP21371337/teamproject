@@ -1,6 +1,6 @@
 <script>
     let scroll = 0
-    let pspeed = 1
+    let pspeed = 0.6
     let opinieu = [
         {avatar: '/main/ptak.webp', nick: 'Natalia A', opinia: 'Bardzo miłe i przyjaźne miejsce, wszędzie blisko, dobre warunki...', ocena: '★★★★★'},
         {avatar: '/main/ptak.webp', nick: 'Anna T', opinia: 'Bardzo ładna miejscówka, ukwiecona, czysciótka, właściciele przesympatyczni, jedzonko bardzo smaczne, urozmaicone, śniadania, kolacje szwecki stół...', ocena: '★★★★★'},
@@ -33,6 +33,7 @@
 
 <style>
     #feedback {
+        z-index: 1;
         position: relative;
         height: 220px;
         color: black;
@@ -48,7 +49,6 @@
         flex-wrap: nowrap;
         position: absolute;
         left: -75%;
-        z-index: -5;
     }
     #feedback .text {
         margin: 0 20px;
@@ -77,7 +77,7 @@
         height: 50px;
         width: 50px;
         border-radius: 50%;
-        margin-right:10px;
+        margin-right: 10px;
         border: 2px solid white;
     }
     #feedback .avatar h3{

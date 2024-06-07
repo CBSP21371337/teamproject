@@ -25,6 +25,7 @@
         text-align: center;
         margin-top: 50px;
         margin-bottom: 50px;
+        z-index: 1;
     }
     #rooms .image{
         background-image: url(/main/rooms/domkimain.webp);

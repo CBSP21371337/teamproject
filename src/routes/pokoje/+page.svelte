@@ -6,7 +6,7 @@
         {nazwa: 'Domki Letniskowe', img: '/pokoje/pokojemain/domkiletniskowe.webp', link: '/example', alt: 'Domki letniskowe'},
         {nazwa: 'Dom Rodzinny', img: '/pokoje/pokojemain/domrodzinny.webp', link: '/example', alt: 'Dom rodzinny'},
         {nazwa: 'Pokój studio 2+2', img: '/pokoje/pokojemain/pokojstudio22.webp', link: '/example', alt: 'Pokój typu studio 2+2 pawilon'},
-        {nazwa: 'Pokój 2-3 osobowy', img: '/pokoje/APARTAMENT-2POZIOMOWY-MAIN.webp', link: '/example', alt: 'Pokój 2-3 osobowy pawilon'},
+        {nazwa: 'Pokój 2-3 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/example', alt: 'Pokój 2-3 osobowy pawilon'},
         {nazwa: 'Pokój 3-4 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/example', alt: 'Pokój 3-4 osobowy pawilon'},
     ]
     let scroll = 0

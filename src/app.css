@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    min-height: 200vh;
+body {
     overflow-x: hidden;
 }

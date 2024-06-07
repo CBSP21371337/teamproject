@@ -11,6 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    z-index: 1;
 }
 div {
     flex: 1;

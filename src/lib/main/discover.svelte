@@ -1,59 +1,59 @@
 <script>
-    let opinie = [
-        {link: 'https://www.google.com/travel/search?ts=CAEaIAoAEhwSFAoHCOgPEAUYHBIHCOgPEAUYHRgBMgQIABAA&qs=MiZDaGdJc0p5M2hmV3E2XzZDQVJvTEwyY3ZNWFJvZHpFMWRtNFFBUTgCQhwiGgoWQ0lITTBvZ0tFSUNBZ0lDVXFkX3JNZxAB&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls', logo: '', opinia: '4.3/5', nazwa: 'Google'},
-        {link: 'https://www.booking.com/Share-eKEqpJ', logo: '', opinia: '8.6/10', nazwa: 'Booking'},
-        {link: '', logo: '', opinia: '9/10', nazwa: 'Księga Gości'}
+    let camera = '<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_127_334)"><path d="M45.5601 17.6518C45.6874 17.3588 45.7563 17.0432 45.7631 16.7232C45.7699 16.4031 45.7143 16.0848 45.5995 15.7865C45.4847 15.4883 45.3131 15.2158 45.0943 14.9848C44.8755 14.7538 44.614 14.5688 44.3246 14.4403L12.8328 0.393699C10.4362 -0.675173 7.48577 0.518157 6.46214 2.93654L1.13924 15.5141C0.638478 16.7038 0.624025 18.0463 1.09906 19.2468C1.57409 20.4473 2.49981 21.4078 3.67304 21.9176L18.2159 28.2332L15.2293 35.7983H4.8171V28.4772H0V48H4.8171V40.679H15.2293C17.2115 40.679 18.9673 39.4734 19.6995 37.609L22.6428 30.1562L35.1793 35.5982C35.7631 35.852 36.4223 35.8618 37.0133 35.6255C37.6042 35.3892 38.0791 34.9259 38.3345 34.3365L39.086 32.6038L43.1829 34.2633L48 22.0615L44.3005 20.5656L45.5601 17.6518ZM34.8806 30.1611L5.57098 17.4346L10.8891 4.86198L40.1818 17.9276L34.8806 30.1611Z" fill="white"/></g><defs><clipPath id="clip0_127_334"><rect width="48" height="48" fill="white"/></clipPath></defs></svg>'
+    let oferta = [
+        {bgimg: '/main/ptak.webp', naglowek: 'Położenie', opis: 'Nasz ośrodek położony jest w malowniczym Pobierowie, nad brzegiem Morza Bałtyckiego. W pobliżu znajdują się piękne plaże, idealne do opalanie się, pływania i spacerów.', ikony: camera, camera},
+        {bgimg: '/main/ptak.webp', naglowek: 'Wyposażenie', opis: 'W naszych pokojach i apartamentach zapewniamy komfortowe warunki wypoczynku. Do dyspozycji gości jest również parking, bezpłatne WI-FI oraz plac zabaw dla dzieci.', ikony: ''},
+        {bgimg: '/main/discover/stolowka.webp', naglowek: 'Jadalnia', opis: 'Po całym dniu kąpieli morskich zapraszamy do skorzystania z naszej tradycyjnej domowej kuchni polskiej, gdzie skosztują Państwo naszych najlepszych specjałów.', ikony: ''},
     ]
 </script>
 
-<section class="discover">
+<section id="discover">
     <div class="odkryj">
         <h2>Odkryj nasz ośrodek</h2>
-        <p>Witamy w naszym ośrodku wczasowym! Gdzie malownicze otoczenie i bogata oferta atrakcji sprawią, że każdy pobyt stanie się niezapomnianą przygodą.</p>
+        <p>Ośrodek Wypoczynkowy KALA to idealne miejsce na relaksujący pobyt z dala od zgiełku miasta. Położony w samym centrum malowniczej okolicy blisko morza, oferuje naszym Gościom komfortowe warunki pobytu oraz szeroki wachlarz atrakcji!</p>
     </div>
-    <div class="opinie">
-        {#each opinie as {link, logo, opinia,nazwa}, i}
-        <div class="card">
-            <a href={link}>
-            <img src={logo} alt={nazwa}>
-            <p>{opinia}</p>
-            </a>
+    <div class="oferta">
+        {#each oferta as {naglowek, opis, bgimg, ikony}}
+        <div class="card" style="background-image: url({bgimg})">
+            <h2>{naglowek}</h2>
+            <p>{opis}</p>
+            <div style="border-radius: 50px;">{@html ikony}</div>
         </div>
         {/each}
     </div>
 </section>
 
 <style>
-    .discover{
-        color: black;
+    #discover {
+        color: white;
         text-align: center;
     }
-    .odkryj h2{
+    #discover .odkryj h2 {
         text-transform: capitalize;
         font-size: 35px;
     }
-    .odkryj p{
+    #discover .odkryj p {
         color: gray;
-        font-size: 15px;
+        font-size: 18px;
     }
-    .odkryj{
+    #discover .odkryj {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 40%;
         margin: 50px auto;
     }
-    .opinie{
+    #discover .oferta {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        width: 40%;
+        width: 70%;
         margin: 5px auto;
+        gap: 50px;
     }
-    .card{
-        background: linear-gradient(45deg, rgba(221, 221, 221, 0.1) 40%, rgba(255, 255, 255, 0.3));
-        height: 160px;
-        width: 140px;
+    #discover .card {
+        border: 2px solid white;
+        width: 500px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -61,16 +61,17 @@
         padding: 20px 10px;
         transition: all 250ms ease-out;
         user-select: none;
+        background-size: cover;
+        filter: brightness(0.7) blur(0px);
     }
-    .card:hover{
-        scale: 1.05;
+    #discover .card:hover {
+        scale: 1.03;
     }
-    .card img{
-        width: 80px;
-        height: 80px;
-    }
-    .card p{
+    #discover .card p {
         font-weight: bold;
-        color: gold;
+        color: #ffffff;
+    }
+    #discover .oferta h2 {
+        font-size: 30px;
     }
 </style>
