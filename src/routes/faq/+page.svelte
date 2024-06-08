@@ -88,7 +88,7 @@
         color: rgb(215, 215, 215);
     }
     .qcard button {
-        z-index: 5;
+        z-index: 2;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -101,6 +101,9 @@
         margin: 0 auto;
         padding-bottom: 100px;
         padding-top: 50px;
+    }
+    .qcontainer{
+        z-index: 0;
     }
     .qcard{
         border: rgb(158, 158, 158) 1px solid;

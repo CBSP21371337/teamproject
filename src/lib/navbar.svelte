@@ -1,5 +1,6 @@
 <script>
-    import { onMount, onDestroy } from 'svelte';
+    import { onMount, onDestroy} from 'svelte';
+    import {fade} from 'svelte/transition'
 
     let isVisible = true;
     let lastScrollTop = 0;
@@ -17,6 +18,14 @@
 
       lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
     };
+
+    // window.onclick = function openDrawer() {
+    //     if (drawer == true) {
+    //         closeDrawer()
+    //     }
+    // }
+
+    
 
     onMount(() => {
       if (typeof window !== 'undefined') {
@@ -65,6 +74,7 @@
         {simg: '/navbar/bookingrating.webp', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala', salt: 'Booking rating'},
         {simg: '/navbar/facebook.webp', slink: 'https://www.facebook.com/kalapobierowo', salt: 'Facebook'}
     ]
+
 </script>
 
 <!-- <div class="burger-menu"> SAVE
@@ -86,8 +96,9 @@
 <a href="/"><img src="/important/kala.webp" alt="kala logo"></a>
 <div class="top-menu"></div>
 </div>
-<button class="outclick_check" on:click={closeDrawer}></button>
-<div class="burger-menu">
+<!-- <button class="outclick_check" on:click={closeDrawer}></button> -->
+<!-- <button on:click={Drawer}></button> -->
+<div class="burger-menu" >
     <button on:click={Drawer}>
         <svg width="70" height="70" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger-svg">
             <g id="burger-menu">
@@ -124,10 +135,22 @@
             {/each}
         </div>
     </div>
+    <button class="outclick_check" on:click={closeDrawer} style="display: {drawer ? 'block' : 'none'};" transition:fade={{duration: 200}}></button>
+    <div class="niga" transition:fade={{duration: 200}}></div>
+
     {/if}
 </nav>
 
 <style>
+    .niga{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+    }
     .visitus {
         padding-bottom: 15px;
         color: #2C389E;
@@ -206,12 +229,12 @@
     }
     .outclick_check {
         position: fixed;
-        width: 100%;
+        width: 81.5%;
         height: 100%;
         left: 0;
         top: 0;
         cursor: default;
-        z-index: 1;
+        z-index: 299999;
     }
     nav {
         position: fixed;
@@ -249,6 +272,7 @@
         margin: 10px 0;
         transition: all 250ms ease-out;
         transform-origin: center;
+        z-index: 200;
     }
     li:after {
         display:block;
@@ -278,7 +302,7 @@
         position: fixed;
         top: 0;
         right: 14px;
-        z-index: 5;
+        z-index: 999;
     }
     /* .burger-menu img{
         width: 60px;
