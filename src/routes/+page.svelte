@@ -9,7 +9,7 @@
 </script>
 
 <Header />
-<!-- <Opinions /> -->
+<Opinions />
 <Discover />
 <!-- <Offer /> -->
 <Rooms />

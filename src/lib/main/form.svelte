@@ -6,11 +6,11 @@
     const message = `<path fill="currentColor" d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994zM20 19V8.994A4.004 4.004 0 0 0 16 5H8a3.99 3.99 0 0 0-4 3.994v6.012A4.004 4.004 0 0 0 8 19zm-6-8h2v2h-2zm-6 0h2v2H8z"/>`
     
     let form = [
-        {type: '', name: '', id: '', icon: people, tooltip: 'Imię i nazwisko', displayname: 'Imię i nazwisko'},
-        {type: '', name: '', id: '', icon: handle, tooltip: 'Adres e-mail', displayname: 'Adres e-mail'},
-        {type: '', name: '', id: '', icon: phone, tooltip: 'Telefon', displayname: 'Telefon'},
+        {type: 'text', name: '', id: '', icon: people, tooltip: 'Imię i nazwisko', displayname: 'Imię i nazwisko'},
+        {type: 'email', name: '', id: '', icon: handle, tooltip: 'Adres e-mail', displayname: 'Adres e-mail'},
+        {type: 'tel', name: '', id: '', icon: phone, tooltip: 'Telefon', displayname: 'Telefon'},
         {type: '', name: '', id: '', icon: calendar, tooltip: 'Przyjazd - Wyjazd', displayname: 'Przyjazd - Wyjazd'},
-        {type: '', name: '', id: '', icon: message, tooltip: 'Wiadomość', displayname: 'Wiadomość'}
+        {type: 'text', name: '', id: '', icon: message, tooltip: 'Wiadomość', displayname: 'Wiadomość'}
     ];
 </script>
 
@@ -28,16 +28,16 @@
                     <div class="section">
                         <h4>Formularz kontaktowy</h4>
                         {#each form as { type, name, displayname, id, icon, tooltip }}
-                            <label>
-                                <div class="form-group">
-                                    <input type={type} name={name} class="form-style" placeholder={displayname} id={id} maxlength="32">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="input-icon">{@html icon}</svg>
-                                    <div class="tooltip">
-                                        <span class="tooltiptext"><p>{tooltip}</p></span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
-                                    </div>
+                        <label>
+                            <div class="form-group">
+                                <input type={type} name={name} class="form-style" placeholder={displayname} id={id} maxlength="32">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="input-icon">{@html icon}</svg>
+                                <div class="tooltip">
+                                    <span class="tooltiptext"><p>{tooltip}</p></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
                                 </div>
-                            </label>
+                            </div>
+                        </label>
                         {/each}
                         <a href="https://owkala.pl" class="btn">wyślij</a>
                     </div>

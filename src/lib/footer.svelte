@@ -60,7 +60,6 @@
     padding-left: 38px;
   }
   .footermove {
-    /* przesunięcie w footerze, trzeba zobaczyć które lepsze */
     padding-left: 32px;
     text-decoration: underline;
   }
@@ -154,7 +153,7 @@
     z-index: -10;
     opacity: 1;
     bottom: 0;
-    animation: animateWaves 4s linear infinite;
+    animation: animateWaves 4.5s linear infinite;
   }
   .wave#wave2 {
     z-index: -9;
@@ -166,7 +165,7 @@
     z-index: -10;
     opacity: 0.2;
     bottom: 15px;
-    animation: animateWaves 3s linear infinite;
+    animation: animateWaves 3.5s linear infinite;
   }
   .wave#wave4 {
     z-index: -9;

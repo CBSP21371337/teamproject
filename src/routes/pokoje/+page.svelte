@@ -1,13 +1,13 @@
 <script>
     let pokoje_def = [
-        {nazwa: 'Apartament 2-Poziomowy', img: '/pokoje/pokojemain/apartament2poziomowy.webp', link: '/example', alt: 'Apartament 2 poziomowy'},
-        {nazwa: 'Pokój 2 osobowy z tarasem', img: '/pokoje/pokojemain/pokoj2osobowytaras.webp', link: '/example', alt: 'Pokój 2 osobowy z tarasem'},
-        {nazwa: 'Domki Drewniane', img: '/pokoje/pokojemain/domkidrewniane.webp', link: '/example', alt: 'Domki drewniane'},
-        {nazwa: 'Domki Letniskowe', img: '/pokoje/pokojemain/domkiletniskowe.webp', link: '/example', alt: 'Domki letniskowe'},
-        {nazwa: 'Dom Rodzinny', img: '/pokoje/pokojemain/domrodzinny.webp', link: '/example', alt: 'Dom rodzinny'},
-        {nazwa: 'Pokój studio 2+2', img: '/pokoje/pokojemain/pokojstudio22.webp', link: '/example', alt: 'Pokój typu studio 2+2 pawilon'},
-        {nazwa: 'Pokój 2-3 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/example', alt: 'Pokój 2-3 osobowy pawilon'},
-        {nazwa: 'Pokój 3-4 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/example', alt: 'Pokój 3-4 osobowy pawilon'},
+        {nazwa: 'Apartament 2-Poziomowy', img: '/pokoje/pokojemain/apartament2poziomowy.webp', link: '/apartament2poz', alt: 'Apartament 2 poziomowy'},
+        {nazwa: 'Pokój 2 osobowy z tarasem', img: '/pokoje/pokojemain/pokoj2osobowytaras.webp', link: '/pokoj2os', alt: 'Pokój 2 osobowy z tarasem'},
+        {nazwa: 'Domki Drewniane', img: '/pokoje/pokojemain/domkidrewniane.webp', link: '/domkidrewniane', alt: 'Domki drewniane'},
+        {nazwa: 'Domki Letniskowe', img: '/pokoje/pokojemain/domkiletniskowe.webp', link: '/domkiletniskowe', alt: 'Domki letniskowe'},
+        {nazwa: 'Dom Rodzinny', img: '/pokoje/pokojemain/domrodzinny.webp', link: '/domrodzinny', alt: 'Dom rodzinny'},
+        {nazwa: 'Pokój studio 2+2', img: '/pokoje/pokojemain/pokojstudio22.webp', link: '/pokojstudio', alt: 'Pokój typu studio 2+2 pawilon'},
+        {nazwa: 'Pokój 2-3 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/pokoj3os', alt: 'Pokój 2-3 osobowy pawilon'},
+        {nazwa: 'Pokój 3-4 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/pokoj4os', alt: 'Pokój 3-4 osobowy pawilon'},
     ]
     let scroll = 0
     let pspeed = 0.7
@@ -22,7 +22,39 @@
         <p>Sprawdź nasz szeroki wybór pokoi!</p>
     </div>
 </header>
-
+<div class="roomsdescription">
+    <p>
+        Witamy serdecznie i zapraszamy do spędzenia wolnego czasu w Ośrodku Wczasowym „KALA”, położonym w centrum Pobierowa (gmina Rewal) w odległości ok 200m od pięknej piaszczystej plaży, otoczony zielenią i drzewami.
+        W bezpośrednim sąsiedztwie z Kompleksem sportowo-rekreacyjnym, oraz z halą sportową.
+    </p>
+    <br>
+    <b>Do dyspozycji naszych Gości:</b>
+    <ul>
+        <li><span class="important">NOWOŚĆ!</span> <b>Apartamenty 2 poziomowe</b></li>
+        <li><span class="important">NOWOŚĆ!</span> <b>Komfortowy pokój 2 osobowy z tarasem</b></li>
+        <li>rodzinny dom do 9 osób</li>
+        <li>komfortowe pokoje 2,3,4 osobowe, studia 2+2 osobowe z aneksem kuchennym w budynku wczasowym</li>
+        <li>komfortowe domki w całości z drewna dla 6 osób</li>
+        <li>domki letniskowe do 4 osób,</li>
+        <li>zadaszone miejsce do grillowania,</li>
+        <li>stoły do ping - ponga,</li>
+        <li>plac zabaw dla dzieci</li>
+        <li>bawialnia dla dzieci</li>
+        <li>stołówka - serwująca smaczne, domowe posiłki,</li>
+        <li>kawiarnia</li>
+        <li>recepcja</li>
+        <li>ogrodzony, monitorowany parking na terenie Ośrodka Wczasowego (płatny VII-VIII),</li>
+        <li>punkt medyczny,</li>
+        <li>wi-fi,</li>
+        <li>obiekt monitorowany.</li>
+    </ul>
+    <p>
+    </p>
+    <p class="questions">
+        Ośrodek Wczasowy „KALA” ul. Moniuszki 5 72-346 Pobierowo<br>
+        <b>Zapytania oraz rezerwacje przyjmujemy od 8:00 do 22:00 pod numerem telefonu 602-469-714</b>
+    </p>
+</div>
 <div class="pokoje_container">
     {#each pokoje_def as {nazwa, img, link, alt}}
         <div class="room">
@@ -33,6 +65,8 @@
 </div>
 
 <hr>
+<br>
+<h1 style="text-align: center; font-size: 40px;">Poza obiektem</h1>
 
 <div class="roomout room2">
     <img src='/pokoje/pokojemain/apartament2poziomowy.webp' alt='pokojspec'>
@@ -40,6 +74,52 @@
 </div>
 
 <style>
+    .important {
+        color: red;
+        font-weight: bold;
+    }
+    .questions {
+        text-align: center;
+        font-size: 0.9em !important;
+        margin-top: 10px;
+    }
+    .roomsdescription {
+        line-height: 31px;
+        margin-top: 2em !important;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin: auto;
+        font-family: 'Segoe Print';
+    }
+    .roomsdescription p {
+        font-size: 16px;
+        color: #8f8f8f;
+        font-weight: 400;
+    }
+    .roomsdescription ul {
+        list-style-type: disc;
+        margin-block-start: 0.5em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+    }
+    @media (max-width: 1380px) {
+    .roomsdescription {
+        width: 100%;
+        }
+    }
+    @media (min-width: 992px) {
+        .roomsdescription {
+        width: 970px;
+        }
+    }
+    @media (min-width: 768px) {
+        .roomsdescription {
+            width: 750px;
+        }
+    }
     .roomout *, .roomout {
         transition: all 350ms ease-out;
     }
@@ -75,11 +155,22 @@
         font-size: 26px;
     }
     .roomout {
+        border-radius: 20px;
         height: 500px;
         width: 50%;
         position: relative;
         overflow: hidden;
         border: 1px solid white;
+    }
+    @media (max-width: 768px) {
+        .roomout {
+        height: 400px;
+        width: 80%;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid white;
+        border-radius: 20px;
+        }
     }
     header {
         height: 100vh;
@@ -132,6 +223,7 @@
         position: relative;
         overflow: hidden;
         border: 1px solid white;
+        border-radius: 20px;
     }
     .room *, .room {
         transition: all 350ms ease-out;
@@ -176,10 +268,10 @@
         }
         .pokoje_container {
             grid-template-columns: 1fr;
-            width: 90%;
+            width: 80%;
         }
         .room {
-            height: 200px;
+            height: 300px;
         }
         .room h2 {
             font-size: 20px;

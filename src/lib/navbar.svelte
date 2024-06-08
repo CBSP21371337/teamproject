@@ -117,7 +117,7 @@
             {/each}
         </ul>
         <hr>
-        <h3 style="padding-bottom: 15px;">Odwiedź nas na:</h3>
+        <h3 class="visitus">Odwiedź nas na:</h3>
         <div class="social-container-navbar">
             {#each socialicons as {slogo, slink, sopis}}
             <div><a href={slink}><div><img src={slogo} alt={sopis}></div></a></div>
@@ -125,9 +125,14 @@
         </div>
     </div>
     {/if}
-</nav> 
+</nav>
 
 <style>
+    .visitus {
+        padding-bottom: 15px;
+        color: #2C389E;
+        font-family: cursive;
+    }
     .nav-item img {
         width: 70px;
         height: 70px;
@@ -206,19 +211,20 @@
         left: 0;
         top: 0;
         cursor: default;
+        z-index: 1;
     }
     nav {
         position: fixed;
         right: 0;
         z-index: 4;
     }
-    @media screen and (max-width: 500px) {
+    /* @media screen and (max-width: 500px) {
         nav {
         overflow-y: scroll;
         width: 100%;
         height: 100%;
         }
-    }
+    } */
     .drawer {
         background-color: #fff;
         width: 100%;
