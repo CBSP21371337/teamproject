@@ -119,4 +119,9 @@ let pspeed = 0.7
         font-size: 30px;
         color: rgb(215, 215, 215);
     }
+    @media (max-width: 370px) {
+        .description h1 {
+            font-size: 2em;
+        }
+    }
 </style>

@@ -133,10 +133,10 @@
             {/each}
         </div>
     </div>
-    <button class="outclick_check" on:click={closeDrawer} style="display: {drawer ? 'block' : 'none'};" transition:fade={{duration: 200}}></button>
     <div class="navbarout" transition:fade={{duration: 200}}></div>
     {/if}
 </nav>
+<button class="outclick_check" on:click={closeDrawer} style="display: {drawer ? 'block' : 'none'};" transition:fade={{duration: 200}}></button>
 
 <style>
     .navbarout {
@@ -145,7 +145,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         z-index: -5;
     }
     .visitus {
@@ -204,11 +204,22 @@
         width: 250px;
         position: fixed;
         float: none;
-        display: block;
+        display: flex;
         text-align: left;
         z-index: 5;
         margin-top: 13px;
         margin-left: 15px;
+    }
+    @media (max-width: 350px) {
+        .navbartop a {
+            width: 65%;
+            margin-top: 20px;
+        }
+        .navbartop img {
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        }
     }
     .top-menu {
         background-color: black;
@@ -233,17 +244,19 @@
     }
     .outclick_check {
         position: fixed;
-        width: 81.5%;
+        width: 100%;
         height: 100%;
         left: 0;
         top: 0;
         cursor: default;
-        z-index: 299999;
+        z-index: 4;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s;
     }
     nav {
         position: fixed;
         right: 0;
-        z-index: 4;
+        z-index: 5;
     }
     /* @media screen and (max-width: 500px) {
         nav {

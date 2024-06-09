@@ -50,6 +50,16 @@
         position: absolute;
         left: -75%;
     }
+    @media (max-width: 1000px) {
+        #feedback .reviews {
+            left: -175%;
+        }
+    }
+    @media (min-width: 2000px) {
+        #feedback .reviews {
+            left: -45%;
+        }
+    }
     #feedback .text {
         margin: 0 20px;
         width: 300px;

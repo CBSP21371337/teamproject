@@ -48,4 +48,12 @@
         font-size: 30px;
         color: rgb(215, 215, 215);
     }
+    @media (max-width: 445px) {
+        .description h1 {
+            font-size: 2em;
+        }
+        .description p {
+            font-size: 1em;
+        }
+    }
 </style>
