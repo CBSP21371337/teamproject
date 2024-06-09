@@ -81,7 +81,6 @@
   footer {
     z-index: 2;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     background: #333;
@@ -93,6 +92,11 @@
     flex-direction: column;
     align-items: center;
     color: #fff;
+  }
+  @media (max-width: 380px) {
+    footer {
+      padding: 20px 10px;
+    }
   }
   .footer-container {
     display: flex;

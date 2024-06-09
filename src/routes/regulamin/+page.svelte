@@ -45,7 +45,7 @@ let pspeed = 0.7
         <li>Świadczymy usługi zgodnie ze swoją kategorią, w przypadku zastrzeżeń, reklamacji dotyczących co do jakości usług, gość proszony jest o zgłoszenie ich nie później niż dobę od momentu meldunku, <br>reklamacje składane w dniu wykwaterowania nie będą rozpatrywane. Jednocześnie informujemy, że nie odpowiadamy za niedogodności spowodowane z przyczyn od nas nie zależnych Np. przerwy w dostawie prądu czy wody.</li>
     </ol>
     <p>
-        Regulamin O.W. „Kala” podaje się do wiadomości poprzez zamieszczeni na stronie www.owkala.pl , oraz do indywidualnego zapoznania się przez klienta przy czynnościach meldunkowych w Recepcji.
+        Regulamin O.W. „Kala” podaje się do wiadomości poprzez zamieszczenie na stronie www.owkala.pl , oraz do indywidualnego zapoznania się przez klienta przy czynnościach meldunkowych w Recepcji.
     </p>
     <p>
         Regulamin niniejszy zatwierdzony został przez właściciela O.W. „ Kala” i obowiązuje od dnia 30.11.2010 r.

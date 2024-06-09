@@ -80,7 +80,7 @@
     }
     .questions {
         text-align: center;
-        font-size: 0.9em !important;
+        font-size: 1em !important;
         margin-top: 10px;
     }
     .roomsdescription {
@@ -89,10 +89,10 @@
         padding-right: 5px;
         padding-left: 5px;
         margin: auto;
-        font-family: 'Segoe Print';
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .roomsdescription p {
-        font-size: 16px;
+        font-size: 1.2em;
         color: #8f8f8f;
         font-weight: 400;
     }
@@ -104,6 +104,7 @@
         margin-inline-end: 0px;
         padding-inline-start: 40px;
         unicode-bidi: isolate;
+        font-size: 1.1em;
     }
     @media (max-width: 1380px) {
     .roomsdescription {

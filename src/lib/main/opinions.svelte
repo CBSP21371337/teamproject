@@ -13,10 +13,10 @@
     overflow: hidden;
     z-index: 1;
 }
-div {
+#opinions div {
+    height: 100px;
     flex: 1;
-    margin: 2px;
-    padding: 30px;
+    margin: 1px;
     text-align: center;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,21 +24,38 @@ div {
     font-size: 40px;
     color: white;
     font-weight: 400;
+    min-width: 200px;
 }
 #opinions .google {
     background-image: url('/main/opinions/google.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#opinions a {
+    position: absolute;
 }
 #opinions .facebook {
     background-image: url('/main/opinions/facebook.png');
-    background-size: contain;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #opinions .booking {
     background-image: url('/main/opinions/booking.png');
-    background-size: contain;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #opinions .user {
     background-image: url('/main/opinions/dodajopinie.png');
-    background-size: contain;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #opinions img {
     margin: auto;

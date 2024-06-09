@@ -25,8 +25,6 @@
     //     }
     // }
 
-    
-
     onMount(() => {
       if (typeof window !== 'undefined') {
         window.addEventListener('scroll', handleScroll);
@@ -70,11 +68,11 @@
         {slogo: '/navbar/facebook.svg', slink: 'https://www.facebook.com/kalapobierowo', sopis: 'Facebook'},
         {slogo: '/navbar/instagram.svg', slink: 'https://www.instagram.com/ow.kala', sopis: 'Instagram'}
     ]
+
     let side = [
         {simg: '/navbar/bookingrating.webp', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala', salt: 'Booking rating'},
         {simg: '/navbar/facebook.webp', slink: 'https://www.facebook.com/kalapobierowo', salt: 'Facebook'}
     ]
-
 </script>
 
 <!-- <div class="burger-menu"> SAVE
@@ -85,7 +83,7 @@
     <button on:click={Drawer}><img src="/important/burger-menu-closed.svg" alt="menu open"></button>
     {/if}
 </div> -->
-<div class="navbarside {isVisible ? 'visible' : 'hidden'}">
+<div class="navbarside {isVisible ? 'visiblex' : 'hiddenx'}">
     <div class="nav-item"></div>
     {#each side as {slink, simg, salt}}
     <div class="separator"></div>
@@ -94,7 +92,7 @@
 </div>
 <div class="navbartop">
 <a href="/"><img src="/important/kala.webp" alt="kala logo"></a>
-<div class="top-menu"></div>
+<div class="top-menu {isVisible ? 'visibley' : 'hiddeny'}"></div>
 </div>
 <!-- <button class="outclick_check" on:click={closeDrawer}></button> -->
 <!-- <button on:click={Drawer}></button> -->
@@ -136,13 +134,12 @@
         </div>
     </div>
     <button class="outclick_check" on:click={closeDrawer} style="display: {drawer ? 'block' : 'none'};" transition:fade={{duration: 200}}></button>
-    <div class="niga" transition:fade={{duration: 200}}></div>
-
+    <div class="navbarout" transition:fade={{duration: 200}}></div>
     {/if}
 </nav>
 
 <style>
-    .niga{
+    .navbarout {
         background-color: rgba(0, 0, 0, 0.5);
         position: fixed;
         top: 0;
@@ -177,10 +174,10 @@
         width: 100px;
         height: 100%;
         right: 0;
+        bottom: 0;
         display: flex;
         flex-direction: column;
         position: fixed;
-        bottom: 0;
         z-index: 4;
         transition: transform 0.3s;
     }
@@ -191,11 +188,17 @@
             max-height: 50px;
         }
     }
-    .hidden {
+    .hiddenx {
         transform: translateX(100%);
     }
-    .visible {
+    .visiblex {
         transform: translateX(0);
+    }
+    .hiddeny {
+        transform: translateY(0);
+    }
+    .visibley {
+        transform: translateY(-100%);
     }
     .navbartop a {
         width: 250px;
@@ -217,6 +220,7 @@
         position: fixed;
         top: 0;
         z-index: 4;
+        transition: transform 0.3s;
     }
     .social-container-navbar {
         display: flex;
@@ -282,7 +286,9 @@
         transition: transform 100ms ease-in-out;
         transform-origin: 0% 50%;
     }
-    li:hover:after { transform: scaleX(0.8); }
+    li:hover:after { 
+        transform: scaleX(0.8); 
+    }
     li:hover a {
         color: rgb(0, 217, 255);
     }

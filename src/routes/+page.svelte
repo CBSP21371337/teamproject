@@ -9,9 +9,9 @@
 </script>
 
 <Header />
-<Discover />
-<Rooms />
 <Opinions />
 <Feedback />
+<!-- <Discover /> -->
+<Rooms />
 <!-- <Offer /> -->
 <Form />
