@@ -9,6 +9,7 @@
         {nazwa: 'Pokój 2-3 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/pokoj3os', alt: 'Pokój 2-3 osobowy pawilon'},
         {nazwa: 'Pokój 3-4 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/pokoj4os', alt: 'Pokój 3-4 osobowy pawilon'},
     ]
+    let linklsna = '/pokoj4os'
     let scroll = 0
     let pspeed = 0.7
 </script>
@@ -57,10 +58,12 @@
 </div>
 <div class="pokoje_container">
     {#each pokoje_def as {nazwa, img, link, alt}}
-        <div class="room">
-            <img src={img} alt={alt}>
-            <h2><a href={link}>{nazwa}</a></h2>
-        </div>
+        <a href={link}>
+            <div class="room">
+                <img src={img} alt={alt}>
+                <h2><p>{nazwa}</p></h2>
+            </div>
+        </a>
     {/each}
 </div>
 
@@ -69,8 +72,10 @@
 <h1 style="text-align: center; font-size: 40px;">Poza obiektem</h1>
 
 <div class="roomout room2">
+    <a href={linklsna}>
     <img src='/pokoje/pokojemain/apartament2poziomowy.webp' alt='pokojspec'>
-    <h2><a href='/'>Apartament Lesna Dreams</a></h2>
+    <h2>Apartament Lesna Dreams</h2>
+    </a>
 </div>
 
 <style>

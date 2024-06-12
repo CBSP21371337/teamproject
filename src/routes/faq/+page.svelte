@@ -11,9 +11,9 @@
         {question: 'Jakie są godziny zameldowania i wymeldowania?', answer: 'Doba zaczyna się od godziny 16, a kończy o 10.', state: false},
         {question: 'Jakie są godziny posiłków?', answer: 'Śniadanie 8:00, Obiad 13:00, Kolacja 18:00 (ewentualnie(to do sprawdzenia i ustalenia) Śniadanie 8:00, Zupa 13:00, Obiadokolacja 18:00)', state: false},
         {question: 'Czy ośrodek zapewnia dostęp do WIFI?', answer: 'Tak, na terenie ośrodka znajduje się bezpłatny punkt dostępowy WIFI.', state: false},
-        {question: 'Jakie są rodzaje dostępnych pokoi?', answer: 'Informacje o pokojach wraz ze zdjęciami znajdują się na podstronie (link do podstrony)', state: false},
+        {question: 'Jakie są rodzaje dostępnych pokoi?', answer: 'Informacje o pokojach wraz ze zdjęciami znajdują się na podstronie pokoje', state: false},
         {question: 'Czy dostępne są leżaki i parawany?', answer: 'Tak, leżaki oraz parawany można wypożyczyć na recepcji.', state: false},
-        {question: 'Czy ośrodek przyjmuje grupy zorganizowane, itp.?', answer: 'Tak, szczegółowe informacje można znaleźć na stronie (strona do grupy), lub poprzez kontakt tel: +48606446539.', state: false},
+        {question: 'Czy ośrodek przyjmuje grupy zorganizowane, itp.?', answer: 'Tak, szczegółowe informacje można znaleźć na stronie po przejściu na stronę dla-grup, lub poprzez kontakt tel: (+48) 606 446 539.', state: false},
         {question: 'Czy plaża jest strzeżona?', answer: 'Tak, plaża w Pobierowie jest strzeżona przez ratowników RWR, oraz WOPR.', state: false},
         {question: 'Ile wynosi opłata klimatyczna?', answer: 'Opłata klimatyczna wynosi 2.50 zł za osobę (cena może się w każdej chwili zmienić)', state: false},
     ]
@@ -125,8 +125,10 @@
         font-size: 30px;
     }
     .answer p {
+        position: relative;
         font-size: 20px;
         padding: 0 0 20px 20px;
+        z-index: 2;
     }
     .arrow {
         transition: transform 0.3s ease;

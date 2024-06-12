@@ -15,28 +15,18 @@
       } else {
         isVisible = false;
       }
-
       lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
     };
-
-    // window.onclick = function openDrawer() {
-    //     if (drawer == true) {
-    //         closeDrawer()
-    //     }
-    // }
-
     onMount(() => {
       if (typeof window !== 'undefined') {
         window.addEventListener('scroll', handleScroll);
       }
     });
-
     onDestroy(() => {
       if (typeof window !== 'undefined') {
         window.removeEventListener('scroll', handleScroll);
       }
     });
-
     import {fly, scale} from 'svelte/transition'
     let drawer = false;
     function Drawer() {
@@ -51,51 +41,40 @@
             drawer = false;
         }
     }
-
     let navlinks = [
         {nazwa: 'Strona Główna', link: '/'},
         {nazwa: 'Kontakt', link: '/#form'},
         {nazwa: 'FAQ', link: '/faq'},
         {nazwa: 'Pokoje', link: '/pokoje'},
+        {nazwa: 'Jadalnia', link: '/jadalnia'},
         {nazwa: 'Regulamin', link: '/regulamin'},
         {nazwa: 'Księga Gości', link: '/ksiega-gosci'},
         {nazwa: 'Dla Grup', link: '/dla-grup'}
     ]
-
     let socialicons = [
         {slogo: '/navbar/booking.svg', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala.pl.html', sopis: 'Booking'},
         {slogo: '/navbar/google.svg', slink: 'https://g.co/kgs/dL4CMUa', sopis: 'Google'},
         {slogo: '/navbar/facebook.svg', slink: 'https://www.facebook.com/kalapobierowo', sopis: 'Facebook'},
         {slogo: '/navbar/instagram.svg', slink: 'https://www.instagram.com/ow.kala', sopis: 'Instagram'}
     ]
-
     let side = [
         {simg: '/navbar/bookingrating.webp', slink: 'https://www.booking.com/hotel/pl/osrodek-wczasowy-kala', salt: 'Booking rating'},
         {simg: '/navbar/facebook.webp', slink: 'https://www.facebook.com/kalapobierowo', salt: 'Facebook'}
     ]
 </script>
 
-<!-- <div class="burger-menu"> SAVE
-    {#if drawer == true}
-    <button on:click={Drawer}><img src="/important/burger-menu.svg" alt="menu open"></button>
-    {/if}
-    {#if drawer == false}
-    <button on:click={Drawer}><img src="/important/burger-menu-closed.svg" alt="menu open"></button>
-    {/if}
-</div> -->
 <div class="navbarside {isVisible ? 'visiblex' : 'hiddenx'}">
-    <div class="nav-item"></div>
+    <div class="nav-itemdm"></div>
     {#each side as {slink, simg, salt}}
     <div class="separator"></div>
     <div class="nav-item"><a href={slink} target="_blank"><img src={simg} alt={salt}></a></div>
     {/each}
 </div>
 <div class="navbartop">
-<a href="/"><img src="/important/kala.webp" alt="kala logo"></a>
+<a class="logo" href="/"><img src="/important/kala.webp" alt="kala logo"></a>
+<div class="phone"><a href="tel:+48602469714"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="64" stroke-dashoffset="64" d="M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.3943 14.3943 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/></path><path stroke-dasharray="4" stroke-dashoffset="4" d="M14 7.04404C14.6608 7.34734 15.2571 7.76718 15.7624 8.27723M16.956 10C16.6606 9.35636 16.2546 8.77401 15.7624 8.27723" opacity="0"><set attributeName="opacity" begin="0.7s" to="1"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.2s" values="4;8"/></path><path stroke-dasharray="10" stroke-dashoffset="10" d="M20.748 9C20.3874 7.59926 19.6571 6.347 18.6672 5.3535M15 3.25203C16.4105 3.61507 17.6704 4.3531 18.6672 5.3535" opacity="0"><set attributeName="opacity" begin="1s" to="1"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="1s" dur="0.2s" values="10;20"/></path></g></svg><p>(+48) 602-469-714</p></a></div>
 <div class="top-menu {isVisible ? 'visibley' : 'hiddeny'}"></div>
 </div>
-<!-- <button class="outclick_check" on:click={closeDrawer}></button> -->
-<!-- <button on:click={Drawer}></button> -->
 <div class="burger-menu" >
     <button on:click={Drawer}>
         <svg width="70" height="70" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger-svg">
@@ -145,7 +124,6 @@
         top: 0;
         left: 0;
         width: 100%;
-        /* height: 100%; */
         z-index: -5;
     }
     .visitus {
@@ -162,12 +140,23 @@
         height: 2px;
         background-color: #808080;
     }
+    .nav-itemdm {
+        padding: 15px;
+        color: white;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
     .nav-item {
         padding: 15px;
         color: white;
         width: 100px;
         height: 100px;
         text-align: center;
+    }
+    .nav-item:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: 300ms ease;
     }
     .navbarside {
         background-color: rgba(0, 0, 0, 0.3);
@@ -200,7 +189,7 @@
     .visibley {
         transform: translateY(-100%);
     }
-    .navbartop a {
+    .navbartop .logo {
         width: 250px;
         position: fixed;
         float: none;
@@ -209,6 +198,76 @@
         z-index: 5;
         margin-top: 13px;
         margin-left: 15px;
+    }
+    @media (max-width: 440px) {
+        .navbartop .logo {
+            width: 200px;
+            top: 8px;
+        }
+    }
+    @media (max-width: 450px) {
+        .navbartop .phone {
+            visibility: hidden;
+        }
+    }
+    @media (max-width: 700px) {
+        .navbartop .phone {
+            border: 2px solid white;
+            border-radius: 10px;
+            position: fixed;
+            text-align: center;
+            display: flex;
+            right: 0;
+            top: 25px;
+            margin-right: 110px;
+            height: 50px;
+            width: 50px;
+            z-index: 5;
+            padding: 10px;
+            justify-content: center;
+        }
+        .navbartop .phone a {
+            width: 0;
+            margin-right: 30px;
+        }
+        .navbartop .phone p {
+            visibility: hidden;
+            display: flex;
+        }
+        .navbartop .phone svg {
+            font-weight: 700;
+            color: white;
+            font-size: 28px;
+            
+        }
+    }
+    @media (min-width: 700px){
+        .navbartop .phone {
+            visibility: visible;
+            border: 2px solid white;
+            border-radius: 10px;
+            position: fixed;
+            text-align: center;
+            display: flex;
+            right: 0;
+            top: 25px;
+            margin-right: 170px;
+            height: 50px;
+            width: 240px;
+            z-index: 5;
+            padding: 8px;
+            justify-content: center;
+        }
+        .navbartop .phone a {
+            font-weight: 700;
+            color: white;
+            display: flex;
+        }
+        .navbartop .phone svg {
+            font-size: 28px;
+            margin-top: 3px;
+            margin-right: 4px;
+        }
     }
     @media (max-width: 350px) {
         .navbartop a {
@@ -258,13 +317,6 @@
         right: 0;
         z-index: 5;
     }
-    /* @media screen and (max-width: 500px) {
-        nav {
-        overflow-y: scroll;
-        width: 100%;
-        height: 100%;
-        }
-    } */
     .drawer {
         background-color: #fff;
         width: 100%;
@@ -292,7 +344,7 @@
         z-index: 200;
     }
     li:after {
-        display:block;
+        display: block;
         content: '';
         border-bottom: solid 3px rgb(0, 217, 255);  
         transform: scaleX(0);  
@@ -323,14 +375,6 @@
         right: 14px;
         z-index: 999;
     }
-    /* .burger-menu img{
-        width: 60px;
-        height: 60px;
-        transition: all 150ms ease-out;
-    }
-    .burger-menu img:hover{
-        scale: 1.2;
-    } */
     nav {
         overflow: hidden;
     }

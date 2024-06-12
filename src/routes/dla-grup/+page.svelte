@@ -1,4 +1,5 @@
 <script>
+    import Gallery from './gallery.svelte';
     let scroll = 0
     let pspeed = 0.4
     // do dodania bigger picture
@@ -38,11 +39,13 @@
             <li>Nawierzchnia parkietowa o wymiarach 35m x 15m.</li>
         </ol>
     </div>
-</section>
+    </section>
+<Gallery />
 
 <style>
     #dlagrup {
-        height: 100vh;
+        height: 100%;
+        padding-bottom: 100px;
         line-height: 31px;
         margin-top: 2em !important;
         padding-right: 5px;
