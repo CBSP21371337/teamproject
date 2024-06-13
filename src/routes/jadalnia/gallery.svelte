@@ -54,7 +54,7 @@
     border-radius: 20px;
   }
   .room *, .room {
-      transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
   }
   .room img {
     filter: brightness(80%);
@@ -74,12 +74,12 @@
     margin: 100px auto;
   }
   @media (max-width: 768px) {
-        .gallery {
-            grid-template-columns: 1fr;
-            width: 80%;
-        }
-        .room {
-            height: 300px;
-        }
+    .gallery {
+      grid-template-columns: 1fr;
+      width: 80%;
     }
+    .room {
+      height: 300px;
+    }
+  }
 </style>

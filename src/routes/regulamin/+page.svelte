@@ -47,18 +47,12 @@ let pspeed = 0.7
     <p>
         Regulamin O.W. „Kala” podaje się do wiadomości poprzez zamieszczenie na stronie www.owkala.pl , oraz do indywidualnego zapoznania się przez klienta przy czynnościach meldunkowych w Recepcji.
     </p>
-    <p>
+    <p style="margin-bottom: 100px;">
         Regulamin niniejszy zatwierdzony został przez właściciela O.W. „ Kala” i obowiązuje od dnia 30.11.2010 r.
     </p>
 </section>
 
 <style>
-    @media (min-width: 992px) {
-        #regulations {
-            margin: auto;
-            width: 45%;
-        }
-    }
     #regulations {
         font-family: 'Segoe Print';
         position: relative;
@@ -66,7 +60,7 @@ let pspeed = 0.7
         padding-right: 15px;
         padding-left: 15px;
         line-height: 33px;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
     }
     #regulations p {
         font-size: 16px;
@@ -118,6 +112,12 @@ let pspeed = 0.7
     header p {
         font-size: 30px;
         color: rgb(215, 215, 215);
+    }
+    @media (min-width: 992px) {
+        #regulations {
+            margin: auto;
+            width: 45%;
+        }
     }
     @media (max-width: 370px) {
         .description h1 {

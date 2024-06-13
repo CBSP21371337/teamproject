@@ -93,11 +93,6 @@
     align-items: center;
     color: #fff;
   }
-  @media (max-width: 380px) {
-    footer {
-      padding: 20px 10px;
-    }
-  }
   .footer-container {
     display: flex;
     justify-content: space-between;
@@ -191,6 +186,11 @@
     }
     100% {
       background-position-x: 0px;
+    }
+  }
+  @media (max-width: 380px) {
+    footer {
+      padding: 20px 10px;
     }
   }
   @media (max-width: 700px) {

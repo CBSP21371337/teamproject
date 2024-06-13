@@ -61,7 +61,7 @@
         -webkit-text-stroke: 1px rgb(49, 49, 49);
     }
     #opinions .googlebg {
-        background-image: url('/main/opinions/google.png');
+        background-image: url('/main/opinions/googlebck.png');
         background-size: cover;
         display: flex;
         align-items: center;
@@ -69,7 +69,7 @@
         filter: blur(1.2px);
     }
     #opinions .facebookbg {
-        background-image: url('/main/opinions/facebook.png');
+        background-image: url('/main/opinions/facebookbck.png');
         background-size: cover;
         display: flex;
         align-items: center;
@@ -77,7 +77,7 @@
         filter: blur(1.2px);
     }
     #opinions .bookingbg {
-        background-image: url('/main/opinions/booking.png');
+        background-image: url('/main/opinions/bookingbck.png');
         background-size: cover;
         display: flex;
         align-items: center;
@@ -85,7 +85,7 @@
         filter: blur(1.2px);
     }
     #opinions .userbg {
-        background-image: url('/main/opinions/dodajopinie.png');
+        background-image: url('/main/opinions/dodajopiniebck.png');
         background-size: cover;
         display: flex;
         align-items: center;

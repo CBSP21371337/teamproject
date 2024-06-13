@@ -2,7 +2,6 @@
     import Gallery from './gallery.svelte';
     let scroll = 0
     let pspeed = 0.4
-    // do dodania bigger picture
 </script>
 
 <svelte:window bind:scrollY={scroll} />
@@ -45,7 +44,7 @@
 <style>
     #dlagrup {
         height: 100%;
-        padding-bottom: 100px;
+        /* padding-bottom: 50px; */
         line-height: 31px;
         margin-top: 2em !important;
         padding-right: 5px;
@@ -67,21 +66,6 @@
         padding-inline-start: 40px;
         unicode-bidi: isolate;
         font-size: 1.1em;
-    }
-    @media (max-width: 1380px) {
-        #dlagrup {
-            width: 100%;
-        }
-    }
-    @media (min-width: 992px) {
-        #dlagrup {
-            width: 970px;
-        }
-    }
-    @media (min-width: 768px) {
-        #dlagrup {
-            width: 750px;
-        }
     }
     header {
         height: 100vh;
@@ -116,5 +100,20 @@
     header p {
         font-size: 30px;
         color: rgb(215, 215, 215);
+    }
+    @media (max-width: 1380px) {
+        #dlagrup {
+            width: 100%;
+        }
+    }
+    @media (min-width: 992px) {
+        #dlagrup {
+            width: 970px;
+        }
+    }
+    @media (min-width: 768px) {
+        #dlagrup {
+            width: 750px;
+        }
     }
 </style>

@@ -111,21 +111,6 @@
         unicode-bidi: isolate;
         font-size: 1.1em;
     }
-    @media (max-width: 1380px) {
-    .roomsdescription {
-        width: 100%;
-        }
-    }
-    @media (min-width: 992px) {
-        .roomsdescription {
-        width: 970px;
-        }
-    }
-    @media (min-width: 768px) {
-        .roomsdescription {
-            width: 750px;
-        }
-    }
     .roomout *, .roomout {
         transition: all 350ms ease-out;
     }
@@ -167,16 +152,6 @@
         position: relative;
         overflow: hidden;
         border: 1px solid white;
-    }
-    @media (max-width: 768px) {
-        .roomout {
-        height: 400px;
-        width: 80%;
-        position: relative;
-        overflow: hidden;
-        border: 1px solid white;
-        border-radius: 20px;
-        }
     }
     header {
         height: 100vh;
@@ -265,6 +240,21 @@
     .room:hover h2 {
         font-size: 26px;
     }
+    @media (max-width: 1380px) {
+    .roomsdescription {
+        width: 100%;
+        }
+    }
+    @media (min-width: 992px) {
+        .roomsdescription {
+        width: 970px;
+        }
+    }
+    @media (min-width: 768px) {
+        .roomsdescription {
+            width: 750px;
+        }
+    }
     @media (max-width: 768px) {
         header h1 {
             font-size: 40px;
@@ -295,6 +285,16 @@
         }
         .room h2 {
             font-size: 18px;
+        }
+    }
+    @media (max-width: 768px) {
+        .roomout {
+            height: 400px;
+            width: 80%;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid white;
+            border-radius: 20px;
         }
     }
 </style>

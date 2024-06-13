@@ -23,7 +23,7 @@
         font-size: 40px;
         color: white;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 0px;
         margin-bottom: 50px;
         z-index: 1;
     }

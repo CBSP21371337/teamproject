@@ -136,4 +136,12 @@
     .arrow.rotate {
         transform: rotate(180deg);
     }
+    @media (max-width: 1050px) {
+        .question h2 {
+            font-size: 100%;
+        }
+        .answer p {
+            font-size: 90%;
+        }
+    }
 </style>
