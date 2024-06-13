@@ -24,7 +24,7 @@
         color: white;
         text-align: center;
         margin-top: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         z-index: 1;
     }
     #rooms .image{

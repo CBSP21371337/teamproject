@@ -2,7 +2,6 @@
     import { onDestroy, onMount } from 'svelte';
 
     let opinieu = [
-        // Lista recenzji
         { avatar: '/main/ptak.webp', nick: 'Natalia A', opinia: 'Bardzo miłe i przyjaźne miejsce, wszędzie blisko, dobre warunki...', ocena: '★★★★★' },
         { avatar: '/main/ptak.webp', nick: 'Anna T', opinia: 'Bardzo ładna miejscówka, ukwiecona, czysciótka, właściciele przesympatyczni, jedzonko bardzo smaczne, urozmaicone, śniadania...', ocena: '★★★★★' },
         { avatar: '/main/ptak.webp', nick: 'Piotr S', opinia: 'Bardzo dobre warunki oraz mili właściciele, posiłki w postaci bufetu szwedzkiego...', ocena: '★★★★☆' },
@@ -14,27 +13,23 @@
         { avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆' },
         { avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆' },
         { avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆' },
-        { avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆' },
         { avatar: '/main/ptak.webp', nick: 'Wicikowa', opinia: 'Ośrodek bardzo komfortowy z domowym jedzeniem. Gospodarze bardzo mili i pomocni. Pokoje czyste, teren ośrodka zadbany...', ocena: '★★★★☆' }
     ];
 
     let lastScrollTop = 0;
 
-    // Funkcja do przewijania recenzji w lewo
     function scrollLeft() {
         const reviewsContainer = document.querySelector('.reviews');
         // @ts-ignore
-        reviewsContainer.scrollBy({ left: -300, behavior: 'smooth' });
+        reviewsContainer.scrollBy({ left: -340, behavior: 'smooth' });
     }
 
-    // Funkcja do przewijania recenzji w prawo
     function scrollRight() {
         const reviewsContainer = document.querySelector('.reviews');
         // @ts-ignore
-        reviewsContainer.scrollBy({ left: 300, behavior: 'smooth' });
+        reviewsContainer.scrollBy({ left: 340, behavior: 'smooth' });
     }
 
-    // Funkcja do obsługi scrolla strony
     function handleScroll() {
         const scrollTop = (typeof window !== 'undefined' && window.pageYOffset) || (typeof document !== 'undefined' && document.documentElement.scrollTop);
 
@@ -49,7 +44,6 @@
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     }
 
-    // Obsługa zdarzenia przewijania na urządzeniach dotykowych
     // @ts-ignore
     function handleSwipe(event) {
         const touch = event.touches[0];
@@ -89,7 +83,6 @@
         }
     });
 
-    // Usunięcie nasłuchiwania zdarzeń po odmontowaniu komponentu
     onDestroy(() => {
         if (typeof window !== 'undefined') {
             window.removeEventListener('scroll', handleScroll);
@@ -114,7 +107,6 @@
     </div>
     <button class="scroll-btn right" on:click={scrollRight}>❯</button>
 </section>
-
 
 <style>
     #feedback {

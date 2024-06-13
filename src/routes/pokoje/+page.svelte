@@ -1,6 +1,6 @@
 <script>
     let pokoje_def = [
-        {nazwa: 'Apartament 2-Poziomowy', img: '/pokoje/pokojemain/apartament2poziomowy.webp', link: '/apartament2poz', alt: 'Apartament 2 poziomowy'},
+        {nazwa: 'Apartament 2-Poziomowy', img: '/pokoje/pokojemain/apartament2poziomowy.webp', link: '/pokoje/apartament-2-poziomowy', alt: 'Apartament 2 poziomowy'},
         {nazwa: 'Pokój 2 osobowy z tarasem', img: '/pokoje/pokojemain/pokoj2osobowytaras.webp', link: '/pokoj2os', alt: 'Pokój 2 osobowy z tarasem'},
         {nazwa: 'Domki Drewniane', img: '/pokoje/pokojemain/domkidrewniane.webp', link: '/domkidrewniane', alt: 'Domki drewniane'},
         {nazwa: 'Domki Letniskowe', img: '/pokoje/pokojemain/domkiletniskowe.webp', link: '/domkiletniskowe', alt: 'Domki letniskowe'},
@@ -148,7 +148,7 @@
     .roomout {
         border-radius: 20px;
         height: 500px;
-        width: 50%;
+        width: 1200px;
         position: relative;
         overflow: hidden;
         border: 1px solid white;
