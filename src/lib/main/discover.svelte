@@ -59,13 +59,18 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        width: 70%;
+        width: 100%;
         margin: 5px auto;
         gap: 50px;
     }
+    @media (max-width: 1380px) {
+        #discover .oferta {
+            width: 80%;
+        }
+    }
     #discover .card {
         border: 2px solid white;
-        width: 500px;
+        max-width: 500px;
         height: 250px;
         display: flex;
         flex-direction: column;
@@ -82,11 +87,9 @@
     #discover .card p {
         font-weight: bold;
         color: #ffffff;
-        background-color: rgba(50, 50, 50, 0.6);
     }
     #discover .oferta h2 {
         font-size: 25px;
-        background-color: rgba(50, 50, 50, 0.6);
     }
     #discover .oferta p {
         font-size: 15px;

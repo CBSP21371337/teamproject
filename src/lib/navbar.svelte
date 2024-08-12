@@ -108,7 +108,7 @@
         <h3 class="visitus">Odwiedź nas na:</h3>
         <div class="social-container-navbar">
             {#each socialicons as {slogo, slink, sopis}}
-            <div><a href={slink}><div><img src={slogo} alt={sopis}></div></a></div>
+            <div class="socialicons-size"><a href={slink}><div><img src={slogo} alt={sopis}></div></a></div>
             {/each}
         </div>
     </div>
@@ -118,6 +118,9 @@
 <button class="outclick_check" on:click={closeDrawer} style="display: {drawer ? 'block' : 'none'};" transition:fade={{duration: 200}}></button>
 
 <style>
+    .socialicons-size {
+        width: 16%;
+    }
     .navbarout {
         background-color: rgba(0, 0, 0, 0.5);
         position: fixed;
@@ -204,6 +207,40 @@
         z-index: 4;
         transition: transform 0.3s;
     }
+    @media (max-height: 768px) {
+        .top-menu {
+            height: 80px;
+        }
+        .logo {
+            height: 55px;
+        }
+        .burger-svg {
+            width: 50px;
+        }
+        .burger-menu {
+            margin-top: 5px !important;
+        }
+        .phone {
+            top: 15px !important;
+        }
+        .navbarside {
+            width: 80px;
+        }
+        .nav-itemdm {
+            height: 80px;
+        }
+        .nav-item {
+            height: 80px;
+            width: 80px;
+        }
+        .nav-item img {
+            height: 50px;
+            width: 50px;
+        }
+        .drawer a {
+            font-size: 15px;
+        }
+    }
     .social-container-navbar {
         display: flex;
         gap: 20px;
@@ -237,6 +274,7 @@
         height: 100vh;
         padding: 50px;
         padding-top: 100px;
+        overflow: scroll;
     }
     ul {
         list-style: none;

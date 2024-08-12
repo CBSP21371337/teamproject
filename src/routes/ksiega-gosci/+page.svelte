@@ -1,4 +1,5 @@
-<script>
+<!-- <script>
+	import Gallery from './../dla-grup/gallery.svelte';
         let scroll = 0
         let pspeed = 0.4
 </script>
@@ -20,7 +21,7 @@
         box-shadow: inset 0 -5px 20px #000;
     }
     header .image {
-        background-image: url('/ksiegagosci/plaza.webp');
+        background-image: url('/opinie/morze.jpg');
         background-size: cover;
         background-position: center;
         filter: brightness(0.8);
@@ -56,4 +57,15 @@
             font-size: 1em;
         }
     }
-</style>
+</style> -->
+
+<script>
+import Header from "$lib/components/header.svelte";
+let MainHeader = {
+    image: '/dlagrup/kompleks.jpg',
+    title: 'Ksiega gosci',
+    subtitle: 'sprawdz nasze opinie',
+}
+</script>
+
+<Header {MainHeader} />

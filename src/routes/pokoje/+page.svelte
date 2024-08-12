@@ -1,5 +1,11 @@
 <script>
-    let pokoje_def = [
+    import Header from "$lib/components/header.svelte";
+    let MainHeader = {
+        image: '/pokoje/pawilontyl.webp',
+        title: 'Pokoje',
+        subtitle: 'Sprawdź nasz szeroki wybór pokoi!',
+    }
+    let pokoje_osrodek = [
         {nazwa: 'Apartament 2-Poziomowy', img: '/pokoje/pokojemain/apartament2poziomowy.webp', link: '/pokoje/apartament-2-poziomowy', alt: 'Apartament 2 poziomowy'},
         {nazwa: 'Pokój 2 osobowy z tarasem', img: '/pokoje/pokojemain/pokoj2osobowytaras.webp', link: '/pokoj2os', alt: 'Pokój 2 osobowy z tarasem'},
         {nazwa: 'Domki Drewniane', img: '/pokoje/pokojemain/domkidrewniane.webp', link: '/domkidrewniane', alt: 'Domki drewniane'},
@@ -9,20 +15,16 @@
         {nazwa: 'Pokój 2-3 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/pokoj3os', alt: 'Pokój 2-3 osobowy pawilon'},
         {nazwa: 'Pokój 3-4 osobowy', img: '/pokoje/pokojemain/pokoj34osobowy.webp', link: '/pokoj4os', alt: 'Pokój 3-4 osobowy pawilon'},
     ]
+    let pokoje_poza = [
+        {nazwa: 'Pokoj 1 osobowy', img: '/pokoje/pokojemain/apartament2poziomowy.webp', link: '/pokoje/pokoj-1-osobowy', alt: 'Pokoj 1 osobowy'},
+        {nazwa: 'Pokoj 2 osobowy', img: '/pokoje/pokojemain/apartament2poziomowy.webp', link: '/pokoje/pokoj-2-osobowy', alt: 'Pokoj 2 osobowy'},
+        {nazwa: 'Pokoj 2+2 studio', img: '/pokoje/pokojemain/apartament2poziomowy.webp', link: '/pokoje/pokoj-4-osobowy', alt: 'Pokoj 4 osobowy'},
+    ]
     let linklsna = '/pokoj4os'
-    let scroll = 0
-    let pspeed = 0.7
 </script>
 
-<svelte:window bind:scrollY={scroll} />
+<Header {MainHeader} />
 
-<header>
-    <div class="image" style:transform={`translate3d(0, ${scroll * pspeed}px, 0)`}></div>
-    <div class="description">
-        <h1>Pokoje</h1>
-        <p>Sprawdź nasz szeroki wybór pokoi!</p>
-    </div>
-</header>
 <div class="roomsdescription">
     <p>
         Witamy serdecznie i zapraszamy do spędzenia wolnego czasu w Ośrodku Wczasowym „KALA”, położonym w centrum Pobierowa (gmina Rewal) w odległości ok 200m od pięknej piaszczystej plaży, otoczony zielenią i drzewami.
@@ -33,6 +35,9 @@
     <ul>
         <li><span class="important">NOWOŚĆ!</span> <b>Apartamenty 2 poziomowe</b></li>
         <li><span class="important">NOWOŚĆ!</span> <b>Komfortowy pokój 2 osobowy z tarasem</b></li>
+        <li><span class="important">NOWOŚĆ!</span> <b>Pokoj w domu goscinnym 1 osobowy</b></li>
+        <li><span class="important">NOWOŚĆ!</span> <b>Pokoj w domu goscinnym 2 osobowy</b></li>
+        <li><span class="important">NOWOŚĆ!</span> <b>Pokoj w domu goscinnym 2+2 studio</b></li>
         <li>rodzinny dom do 9 osób</li>
         <li>komfortowe pokoje 2,3,4 osobowe, studia 2+2 osobowe z aneksem kuchennym w budynku wczasowym</li>
         <li>komfortowe domki w całości z drewna dla 6 osób</li>
@@ -57,7 +62,32 @@
     </p>
 </div>
 <div class="pokoje_container">
-    {#each pokoje_def as {nazwa, img, link, alt}}
+    {#each pokoje_osrodek as {nazwa, img, link, alt}}
+        <a href={link}>
+            <div class="room">
+                <img src={img} alt={alt}>
+                <h2><p>{nazwa}</p></h2>
+                <h3>KLIKNIJ PO WIECEJ</h3>
+            </div>
+        </a>
+    {/each}
+</div>
+
+<hr>
+<h1 style="text-align: center; font-size: 40px;">Poza obiektem</h1>
+
+<div class="roomout room2">
+    <a href={linklsna}>
+    <img src='/pokoje/pokojemain/lesnadreams.jpg' alt='pokojspec'>
+    <h2>Apartament Lesna Dreams</h2>
+    </a>
+</div>
+
+<hr>
+<br>
+<h1 style="text-align: center; font-size: 40px;">Polecamy rowniez</h1>
+<div class="pokoje_container">
+    {#each pokoje_poza as {nazwa, img, link, alt}}
         <a href={link}>
             <div class="room">
                 <img src={img} alt={alt}>
@@ -67,18 +97,16 @@
     {/each}
 </div>
 
-<hr>
-<br>
-<h1 style="text-align: center; font-size: 40px;">Poza obiektem</h1>
-
-<div class="roomout room2">
-    <a href={linklsna}>
-    <img src='/pokoje/pokojemain/apartament2poziomowy.webp' alt='pokojspec'>
-    <h2>Apartament Lesna Dreams</h2>
-    </a>
-</div>
-
 <style>
+    .room h3 {
+        opacity: 0;
+        font-size: 1rem;
+        color: #dadada;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
     .important {
         color: red;
         font-weight: bold;
@@ -153,40 +181,6 @@
         overflow: hidden;
         border: 1px solid white;
     }
-    header {
-        height: 100vh;
-        overflow: hidden;
-        box-shadow: inset 0 -5px 20px #000;
-    }
-    header .image {
-        background-image: url('/pokoje/pokojemain/apartament2poziomowy.webp');
-        background-size: cover;
-        background-position: center;
-        filter: brightness(0.8);
-        z-index: -5;
-        height: 100vh;
-        position: relative;
-    }
-    header .description {
-        width: 100vw;
-        position: absolute;
-        top: 50%;
-        text-align: center;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.3);
-        padding: 20px;
-        z-index: 0;
-    }
-    header h1 {
-        font-size: 60px;
-        color: white;
-        text-transform: uppercase;
-        margin: 0;
-    }
-    header p {
-        font-size: 30px;
-        color: rgb(215, 215, 215);
-    }
     .room2 {
         margin: 100px auto;
     }
@@ -256,12 +250,6 @@
         }
     }
     @media (max-width: 768px) {
-        header h1 {
-            font-size: 40px;
-        }
-        header p {
-            font-size: 20px;
-        }
         .pokoje_container {
             grid-template-columns: 1fr;
             width: 80%;
@@ -274,12 +262,6 @@
         }
     }
     @media (max-width: 480px) {
-        header h1 {
-            font-size: 30px;
-        }
-        header p {
-            font-size: 18px;
-        }
         .room {
             height: 150px;
         }

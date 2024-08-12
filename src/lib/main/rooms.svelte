@@ -6,7 +6,7 @@
 <svelte:window bind:scrollY={scroll} />
 
 <section id="rooms">
-    <div class="image" style:transform={`translate3d(0 , ${scroll * pspeed}px, 0)`}></div>
+     <div class="image" style="background-attachment: fixed;"></div>
     <p>Nasze przytulne pokoje czekają na Ciebie!</p>
     <button><a href="/pokoje">Sprawdź Teraz</a></button>
 </section>
@@ -36,7 +36,6 @@
         z-index: -5;
         width: 100vw;
         height: 100vh;
-        top: -80%;
     }
     #rooms button{
         padding: 10px 20px;
