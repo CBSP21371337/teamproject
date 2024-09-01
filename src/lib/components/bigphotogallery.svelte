@@ -24,18 +24,40 @@
   }
 </script>
 
+<div class="galleery">
+  <div class="image-container">
+    <button class="arrow arrow-left" on:click={previousImage}>⫷</button>
+    {#if currentImage}
+      <img class="large-image" src={currentImage} alt="Duże zdjęcie pokoju hotelowego" />
+    {:else}
+      <p>Brak zdjęcia</p>
+    {/if}
+    <button class="arrow arrow-right" on:click={nextImage}>⫸</button>
+  </div>
+
+  <div class="thumbnail-container">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    {#each images as image, index}
+      <!-- svelte-ignore a11y-click-events-have-key-events -->
+      <div class="thumbnail {index === currentImageIndex ? 'selected' : ''}" on:click={() => selectImage(index)}>
+        <img src={image} alt="Miniatura pokoju hotelowego" />
+      </div>
+    {/each}
+  </div>
+</div>
+
 <style>
-  .gallery {
+  .galleery {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
   }
 
   .image-container {
     position: relative;
     max-width: 800px;
-    width: 100%;
     height: 500px;
     display: flex;
     align-items: center;
@@ -43,7 +65,6 @@
   }
 
   .large-image {
-    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -80,7 +101,6 @@
     margin-top: 10px;
     padding: 10px 0;
     max-width: 800px;
-    width: 100%;
   }
 
   .thumbnail {
@@ -100,7 +120,6 @@
   }
 
   .thumbnail img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -126,26 +145,3 @@
     }
   }
 </style>
-
-<div class="gallery">
-  <div class="image-container">
-    <button class="arrow arrow-left" on:click={previousImage}>⫷</button>
-    {#if currentImage}
-      <img class="large-image" src={currentImage} alt="Duże zdjęcie pokoju hotelowego" />
-    {:else}
-      <p>Brak zdjęcia</p>
-    {/if}
-    <button class="arrow arrow-right" on:click={nextImage}>⫸</button>
-  </div>
-
-  <div class="thumbnail-container">
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <!-- svelte-ignore a11y-no-static-element-interactions -->
-    {#each images as image, index}
-      <!-- svelte-ignore a11y-click-events-have-key-events -->
-      <div class="thumbnail {index === currentImageIndex ? 'selected' : ''}" on:click={() => selectImage(index)}>
-        <img src={image} alt="Miniatura pokoju hotelowego" />
-      </div>
-    {/each}
-  </div>
-</div>
